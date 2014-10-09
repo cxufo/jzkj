@@ -39,34 +39,38 @@
 		<div class="jz-loginjia">
 			<div class="jz-loginkuang">
 				<div class="jz-login-login">登 录</div>
-				<div class="jz-login-name">
-					<div class="login-span">用户名：</div>
-					<input id="" class="login_name" type="text" value=""
-						name="loginName" />
-				</div>
-				<div class="jz-login-psw">
-					<div class="login-span">密&nbsp&nbsp&nbsp&nbsp码 :</div>
-					<input id="" class="login_name" type="password" name="loginPsw" />
-				</div>
-				<div class="jz-login-choise">
-					<div class="login-choise">
-						<div class="choise-readio">
-							<input type="radio" name="usertype" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp个人用户
+				<form action="client/top.jsp">
+					<div class="jz-login-name">
+						<div class="login-span">用户名：</div>
+						<input id="" class="login_name" type="text" value=""
+							name="loginName" />
+					</div>
+					<div class="jz-login-psw">
+						<div class="login-span">密&nbsp&nbsp&nbsp&nbsp码 :</div>
+						<input id="" class="login_name" type="password" name="loginPsw" />
+					</div>
+					<div class="jz-login-choise">
+						<div class="login-choise">
+							<div class="choise-readio">
+								<input type="radio" name="usertype" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp个人用户
+							</div>
+							<div class="choise-readio">
+								<input type="radio" name="usertype" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp企业用户
+							</div>
 						</div>
-						<div class="choise-readio">
-							<input type="radio" name="usertype" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp企业用户
+						<div class="login-choise">
+							<input id="login-btn" class="login-btn" name="loginbtn"
+								value="登录" type="submit">
+							<script type="text/javascript">
+								
+							</script>
 						</div>
 					</div>
-					<div class="login-choise">
-						<div class="choise-btn">登 录</div>
-						.
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
-	</div><!-- 
-	<div style= "height:200px;width:500px;background-color: red;">kk</div>
-	<div style= "height:200px;width:500px;background-color: red;">kk</div> -->
+	</div>
+	</div>
 	<!--在这里引入头部  -->
 	<%@include file="bottom.jsp"%>
 </body>
