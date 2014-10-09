@@ -1,0 +1,153 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,botton,input,textarea,th,td,img
+	{
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/1.5 microsoft yahei;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+em {
+	font-style: normal;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #0000EE;
+}
+
+/*a:hover
+{
+	color: #F00;
+}*/
+img {
+	border: 0px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*top部分*/
+/*整个top横栏*/
+.jz-topbar {
+	height: 22px;
+	width: 100%;
+	background-color: #DCDCDC;
+}
+/*topbar中间部分*/
+.jz-topbar-content {
+	width: 920px;
+	padding: 0 10px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 22px;
+	font-size: 12px;
+}
+
+.jz-topbar-left {
+	float: left;
+}
+
+.jz-topbar-right {
+	float: right;
+}
+
+.jz-topbar-left  span {
+	margin-right: 10px;
+}
+
+.jz-topbar-right span {
+	margin-left: 10px;
+}
+
+.jz-topbar-left span a {
+	color: #555555;
+	font-family: inherit;
+	font-style: normal;
+}
+
+.jz-topbar-right span a {
+	color: #555555;
+	font-family: inherit;
+	font-style: normal;
+}
+
+.jz-topbar-left  span a:HOVER {
+	background-color:;
+	color: #25D5F4;
+	font-family: fantasy;
+	font-style: normal;
+}
+
+.jz-topbar-right span a:HOVER {
+	background-color:;
+	color: #25D5F4;
+	font-family: fantasy;
+	font-style: normal;
+}
+
+/*底部*/
+.jz-bottombar {
+	height: 100px;
+	width: 100%;
+	background-color: #DCDCDC;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #555555;
+	font-family: inherit;
+	/* position: absolute;
+	top: expression(document.body.clientHeight- this.style.pixelHeight +
+		document.body.scrollTop); */
+}
+
+.jz-bottombar-1 {
+	/*第一栏*/
+	height: 28px;
+	line-height: 28px;
+	padding-top: 5px;
+	margin-bottom: 8px;
+}
+
+.jz-bottombar-1 span {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.jz-bottombar-1 span a {
+	color: #555555;
+}
+
+.jz-bottombar-2 {
+	/*第二栏*/
+	height: 28px;
+	line-height: 28px;
+	margin-top: 5px;
+}
+
+.jz-bottombar-2 span {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.jz-bottombar-3 {
+	/*第三栏*/
+	height: 28px;
+	line-height: 28px;
+}
+/*中间主体部分*/
+.jz-body {
+	
+}
