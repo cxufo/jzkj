@@ -1,14 +1,147 @@
-.c-div-body
+body
 {
-	width: 920px;
-	height: 100%;
-	margin: 0 auto;
-	background-color: red;
+	background-color: #F3F3F3;
 }
 
-.c-div-optionsList
+.c-div-body
 {
+	width: 100%;
+	background: url("../image/page.png") no-repeat bottom;
+	margin-bottom: 40px;
 	
 }
 
+
+/*---------------------首页主体---------------------*/
+.c-div-mian
+{
+	width: 920px;
+	margin: 0 auto;
+}
+
+
+/*---------------------招聘选项---------------------*/
+.c-div-optionsList
+{
+	width: 100%;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.c-div-partTimeList,.c-div-fullTimeList
+{
+	min-height: 64px;
+	border-bottom: 1px dashed #D4D4D4;
+}
+
+.c-div-listTitle
+{
+	float: left;
+	width: 186px;
+	height: 34px;
+	margin: 15px 0px;
+	line-height: 34px;
+	background-color: #18C5D0; 
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+
+.c-div-listDetail
+{
+	padding-top: 15px;
+	width: 714px;
+	line-height: 32px;
+	padding-left: 206px;
+	font-size: 15px;
+}
+
+.c-div-listDetail a
+{
+	color: #5F5F5F;
+}
+
+.c-div-listDetail a:HOVER
+{
+	color: #18C5D0;
+}
+
+
+/*---------------------我要报名---------------------*/
+.c-div-apply
+{
+	width: 100%;
+	margin-top: 60px;
+}
+
+.c-ul-applyList
+{
+	margin-bottom: 80px;
+}
+
+.c-ul-applyList li
+{
+	display: inline-block;
+	padding-top: 18px;
+	width: 422px;
+	height: 265px;
+	background-color: white;
+	line-height: 36px;
+	font-size: 16px;
+	margin-bottom: 26px;
+}
+
+.c-li-singular
+{
+	margin-right: 72px;
+}
+
+.c-ul-applyList li span
+{
+	padding-left: 16px;
+	
+}
+
+.c-ul-applyList li a
+{
+	display: block;
+	height: 51px;
+	line-height: 51px;
+	text-align: center;
+	font-size: 26px;
+	color: white;
+	background-color: #2ED4F2;
+}
+
+
+
+/*---------------------底部分页---------------------*/
+.c-div-paging
+{
+	height: 80px;
+	line-height: 70px;
+	text-align: center;
+}
+
+.c-div-paging a
+{
+	display: inline-block;
+	width: 90px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	border: 1px solid #D4D4D4;
+	text-align: center;
+	color: #949494;
+}
+
+.c-div-paging a:HOVER 
+{	
+	color: #949494;
+}
+
+.paging-active
+{
+	background-color: #BBBBBB;
+}
 

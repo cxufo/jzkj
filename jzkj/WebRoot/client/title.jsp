@@ -33,8 +33,8 @@ String titleBasePath = request.getScheme()+"://"+request.getServerName()+":"+req
 	    	</div>
 	    	
 	    	<div class = "c-div-right">
-	    		<form action="">
-	    			<input id = "i-input-query" type="text" />
+	    		<form action="http://www.baidu.com/baidu" target="_blank">
+	    			<input id = "i-input-query" type="text" name="word" />
 	    			<button id = "i-button-query">搜索</button>
 	    		</form>
 	    	</div>
@@ -46,8 +46,8 @@ String titleBasePath = request.getScheme()+"://"+request.getServerName()+":"+req
     	<div class = "c-div-detail">
     	
     		<div class = "c-div-options">
-	    		<a class = "c-a-options" href = "javascript:;">兼职招聘</a>
-	    		<a class = "c-a-options" href = "javascript:;">全职招聘</a>
+	    		<a id = "i-a-partTime" class = "c-a-options" href = "javascript:;">兼职招聘</a>
+	    		<a id = "i-a-fullTime" class = "c-a-options" href = "javascript:;">全职招聘</a>
     		</div>
     		
     		<div class = "c-div-publish">

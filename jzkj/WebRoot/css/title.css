@@ -75,6 +75,18 @@
 	color: #5F5F5F;
 }
 
+.active
+{
+	width: 186px;
+	height: 100%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 28px;
+	color: #5F5F5F;
+	background-color: #7FE1F2;
+}
+
 .c-a-options:HOVER
 {
 	background-color: #7FE1F2;
