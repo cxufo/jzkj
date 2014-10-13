@@ -70,13 +70,6 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 													<div class="ui_title" unselectable="on"
 														style="cursor: move;">校园无忧网（www.school51.com）服务协议</div>
 													<div class="ui_title_buttons">
-														<!-- 	<a class="ui_min" href="javascript:void(0);" title="最小化"
-															style="display: inline-block;"><b class="ui_min_b"></b></a><a
-															class="ui_max" href="javascript:void(0);" title="最大化"
-															style="display: inline-block;"><b class="ui_max_b"></b></a><a
-															class="ui_res" href="javascript:void(0);" title="还原"
-															style="display: none;"><b class="ui_res_b"></b><b
-															class="ui_res_t"></b></a> -->
 														<a id="regAgreeFormClose" class="ui_close"
 															href="javascript:void(0);" title="关闭(esc键)"
 															style="display: inline-block;">×</a>

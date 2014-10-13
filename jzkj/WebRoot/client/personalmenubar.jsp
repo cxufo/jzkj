@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
-	String enuPath = request.getContextPath();
+	String menuPath = request.getContextPath();
 	String menuBasePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ menuPath + "/";
@@ -108,6 +108,7 @@
 	height: 45px;
 	width: 100%;
 	background-color: #EFEFEF;
+	z-index: 20000;
 }
 
 .down-menu-list:HOVER {
@@ -177,15 +178,15 @@
 				<li style="background-color: #80F91E"><a id="fabuA" href="#"><img
 						alt="" src="image/fabujianli.png">
 						<p>发布简历</p></a>
-					<div id="fabuL" class="down-menu-item">
-						<div class="down-menu-list">
+					<div id="fabuL" class="down-menu-item" style="z-index: 2000;">
+						<div class="down-menu-list" >
 							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
+								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;z-index: 2000;" 
 								href="#">兼职简历</a>
 						</div>
 						<div class="down-menu-list">
 							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
+								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;z-index: 2000;"
 								href="#">全职简历</a>
 						</div>
 					</div></li>

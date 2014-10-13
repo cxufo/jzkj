@@ -1,0 +1,130 @@
+.resumeTop {
+	position: relative;
+	z-index: 200;
+	width: 100%;
+}
+
+.contentBody {
+	width: 920px;
+	min-height: 800px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	/* position: relative;
+	top: 45px; */
+	margin-top:45px;
+}
+
+.centent-title {
+	width: 100%;
+	height: 40px;
+	background-color: #80EA78;
+	margin-bottom: 40px;
+}
+
+.centent-title-left {
+	float: left;
+	height: 40px;
+	width: 200px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 28px;
+	font-family: "宋体";
+	color: #18C5D0;
+	background-size: cover;
+}
+
+.centent-title-right {
+	line-height: 40px;
+	width: 600px;
+	padding-left: 100px;
+	height: 40px;
+	font-size: 28px;
+	color: #5F5F5F;
+	font-family: "隶书";
+	float: left;
+}
+
+.cententForm {
+	width: 800px;
+	min-height: 750px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.cententForm form table tr {
+	height: 50px;
+	width: 800px;
+	line-height: 50px;
+	font-size: 20px;
+
+	/* background-color: green; */
+}
+
+.cententForm form table tr td:FIRST-CHILD {
+	min-height: 50px;
+	width: 200px;
+	/* 	background-color: green; */
+	text-align: right;
+	padding-right: 10px;
+}
+
+.cententForm form table tr td:last-child {
+	min-height: 50px;
+	width: 600px;
+	/* 	background-color: red; */
+	padding-left: 10px;
+	line-height: 50px;
+}
+
+.cententForm form table tr td:last-child span {
+	margin-right: 30px;
+}
+/*普通输入框*/
+.resumeText {
+	width: 238px;
+	height: 34px;
+	border: 1px solid #CCC;
+	float: none;
+	font-size: 14px;
+	font-family: arial, "宋体";
+	color: #555555;
+	padding-left: 10px;
+}
+/*单选按钮*/
+.resumeRadio {
+	width: 30px;
+}
+/*下拉选择框*/
+.cententForm form table tr td:last-child select {
+	width: 238px;
+	height: 34px;
+	border: 1px solid #CCC;
+	float: none;
+	font-size: 14px;
+	font-family: arial, "宋体";
+	color: #555555;
+	padding-left: 10px;
+}
+/**/
+.resumeTextarea {
+	height: 120px;
+	width: 500px;
+	vertical-align:text-top;
+	border: 1px solid #CCC;
+	vertical-align:sub;
+}
+#resumeMyIntro{
+	line-height: 25px;
+}
+#resumeMyIntroForm{
+	clear:both;
+}
+.resumeBtn {
+	width: 238px;
+	height: 50px;
+	margin-top:50px;
+	background-color: #18C5D0;
+	line-height: 50px;
+	font-size: 25px;
+	color: #555555;
+}

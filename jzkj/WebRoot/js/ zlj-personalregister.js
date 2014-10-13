@@ -52,9 +52,10 @@ window.onload = function() {
 	regPsw.onblur = function() {
 		regPsw.style.border = 'solid 1px #CCC';
 		regPsw.style.color = '#999999';
-		var registerName =/^.*[A-Za-z0-9\\w_-]+.*$/;
+		var registerName = /^.*[A-Za-z0-9\\w_-]+.*$/;
 		var strLength = getStrLength(regPsw.value);
-		if (registerName.test(regPsw.value)&&strLength<=18&&strLength>=6) {
+		if (registerName.test(regPsw.value) && strLength <= 18
+				&& strLength >= 6) {
 			regPswRemind.style.display = 'none';
 			regPswRemind.style.border = 'solid 1px #CCC';
 			regPswRemind.style.color = '#999999';
@@ -68,7 +69,7 @@ window.onload = function() {
 			return false;
 		}
 	}
-	
+
 	regPswRepeat.onfocus = function() {
 		regPswRepeat.style.border = 'solid 1px #7ABD54';
 		regPswRepeat.style.color = '#555555';
@@ -78,7 +79,7 @@ window.onload = function() {
 		regPswRepeat.style.color = '#999999';
 		var repeatPsw = regPswRepeat.value;
 		var password = regPsw.value;
-		if (repeatPsw==password) {
+		if (repeatPsw == password) {
 			regPswRemindRepeat.style.display = 'none';
 			regPswRemindRepeat.style.border = 'solid 1px #CCC';
 			regPswRemindRepeat.style.color = '#999999';
@@ -92,7 +93,7 @@ window.onload = function() {
 			return false;
 		}
 	}
-	
+
 	regLinkPhone.onfocus = function() {
 		regLinkPhone.style.border = 'solid 1px #7ABD54';
 		regLinkPhoneRemind.style.display = 'block';
@@ -148,22 +149,24 @@ window.onload = function() {
 	var regCheckbox = document.getElementById('regCheckbox');
 	var comBtn = document.getElementById('comBtn');
 	comBtn.onclick = function() {
-		if(regName.onblur()&&regPsw.onblur()&&regPswRepeat.onblur()&&regLinkPhone.onblur()&&regEmail.onblur()&&regCheckbox.checked){
+		if (regName.onblur() && regPsw.onblur() && regPswRepeat.onblur()
+				&& regLinkPhone.onblur() && regEmail.onblur()
+				&& regCheckbox.checked) {
 			return true;
-		}else{
+		} else {
 			alert("请填写完整的信息");
 			return false;
 		}
 	}
-	/*点击弹出注册协议框*/
+	/* 点击弹出注册协议框 */
 	var regAgree = document.getElementById('regAgree');
-	regAgree.onclick=function(){
+	regAgree.onclick = function() {
 		var agreeFrom = document.getElementById('agreeFrom');
-		agreeFrom.style.display="block";
+		agreeFrom.style.display = "block";
 	}
 	var regAgreeFormClose = document.getElementById('regAgreeFormClose');
-	regAgreeFormClose.onclick=function(){
+	regAgreeFormClose.onclick = function() {
 		var agreeFrom = document.getElementById('agreeFrom');
-		agreeFrom.style.display="none";
+		agreeFrom.style.display = "none";
 	}
 }
