@@ -11,11 +11,11 @@ img /* img elements 图片元素 */
 	padding: 0;
 }
 
-/* 设置默认字体 
+/* 设置默认字体 */ 
 body,button,input,select,textarea
 {
-	font: 12px/1.5 '宋体',tahoma,Srial,helvetica,sans-serif;
-}*/
+	font:'宋体';
+}
 
 h1,h2,h3,h4,h5,h6
 {

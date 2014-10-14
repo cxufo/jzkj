@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="description" content="This is my page">
 	
 	<link rel="stylesheet" type="text/css" href="<%=basePath %>css/partjobpublish.css">
+	<script language="javascript" type="text/javascript" src="<%=basePath %>My97DatePicker/WdatePicker.js"></script>
 	
 
   </head>
@@ -33,72 +34,84 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    		<form action="">
 	    			<table class = "c-table-jobForm">
 	    				<tr>
-	    					<th>兼职职位标题</th>
-	    					<td>阿里巴巴</td>
+	    					<th>兼职职位标题:</th>
+	    					<td><input type = "text" name = "jobTitle" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>兼职类别</th>
-	    					<td>it</td>
+	    					<th>兼职类别:</th>
+	    					<td><input type = "text" name = "jobType" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>招聘人数</th>
-	    					<td>3</td>
+	    					<th>招聘人数:</th>
+	    					<td><input type = "text" name = "recruitNum" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>可预约人数</th>
-	    					<td>6</td>
+	    					<th>可预约人数:</th>
+	    					<td><input type = "text" name = "reserveNum" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>学历</th>
-	    					<td>本科</td>
+	    					<th>学历:</th>
+	    					<td>
+		    					<select name="degree">
+									<option value="senior">高中</option>
+									<option value="saab">中专</option>
+									<option value="saab">大专</option>
+									<option value="fiat" selected="selected">本科</option>
+									<option value="audi">硕士</option>
+									<option value="audi">研究生</option>
+									<option value="audi">博士</option>
+								</select>
+	    					</td>
 	    				</tr>
 	    				<tr>
-	    					<th>工作经验</th>
-	    					<td>无要求</td>
+	    					<th>工作经验:</th>
+	    					<td><input type = "text" name = "workExperience" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>性别</th>
-	    					<td>无要求</td>
+	    					<th>性别要求:</th>
+	    					<td>
+		    					<input type = "text" name = "gender" />
+	    					</td>
 	    				</tr>
 	    				<tr>
-	    					<th>年龄范围</th>
-	    					<td>28以下</td>
+	    					<th>年龄范围:</th>
+	    					<td><input type = "text" name = "ageRange" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>工作地点</th>
-	    					<td>贵州</td>
+	    					<th>工作地点:</th>
+	    					<td><input type = "text" name = "workplace" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>工作时间</th>
-	    					<td>周一至周五</td>
+	    					<th>工作时间:</th>
+	    					<td><input type = "text" name = "worktime" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>工资</th>
-	    					<td>面议</td>
+	    					<th>工资:</th>
+	    					<td><input type = "text" name = "salary" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>职位标签</th>
-	    					<td>技术</td>
+	    					<th>职位标签:</th>
+	    					<td><input type = "text" name = "jobLable" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>职位描述</th>
-	    					<td>技术人员</td>
+	    					<th>面试时间:</th>
+	    					<td><input type = "text" name = "interviewTime" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>面试时间</th>
-	    					<td>工作日</td>
+	    					<th>面试地点:</th>
+	    					<td><input type = "text" name = "interviewPlace" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>面试地点</th>
-	    					<td>贵州</td>
+	    				<tr>
+	    					<th>职位描述:</th>
+	    					<td><textarea name = "jobDescribe"></textarea></td>
+	    				</tr>
+	    					<th>具体要求:</th>
+	    					<td><textarea name = "moreRequire"></textarea></td>
 	    				</tr>
 	    				<tr>
-	    					<th>具体要求</th>
-	    					<td>面谈</td>
-	    				</tr>
-	    				<tr>
-	    					<th>发布日期</th>
-	    					<td>今天2014-10-14</td>
+	    					<th>发布日期:</th>
+	    					<td><input type="text" name="publishTime" onclick="WdatePicker()" /></td>
 	    				</tr>
 	    			</table>
 	    		</form>

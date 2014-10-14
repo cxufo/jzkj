@@ -18,7 +18,7 @@ String titleBasePath = request.getScheme()+"://"+request.getServerName()+":"+req
 	<meta http-equiv="description" content="This is my page">
 
 	<link rel="stylesheet" type="text/css" href="<%=titleBasePath%>css/title.css">
-	<link rel="stylesheet" type="text/css" href="<%=titleBasePath%>css/common.css">
+	<link rel="stylesheet" type="text/css" href="<%=titleBasePath%>css/zljmain.css">
 
 
   </head>

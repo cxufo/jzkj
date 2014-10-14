@@ -33,15 +33,34 @@ body
 
 .c-table-jobForm th
 {
+	width: 200px;
 	font-size: 18px;
+	font-weight: normal;
 	color: #777777;
 	text-align: right;	
 }
 
 .c-table-jobForm td
 {
-	text-align: center;
+	padding-left: 16px;
+	text-align: left;
 }
 
+.c-table-jobForm td input, select
+{
+	width: 238px;
+	height: 34px;
+	border: 1px solid #CCC;
+	font-size: 14px;
+	font-family: arial, "宋体";
+	color: #555555;
+}
 
+.c-table-jobForm td textarea
+{
+	border: 1px solid #CCC;
+	width: 385px;
+	height: 87px;
+	margin-top: 6px;
+}
 
