@@ -111,7 +111,7 @@
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro">自我简绍:</td>
 						<td><textarea style="width: 352px; height: 87px;"
-								name="blog_sign_name" id="blog_sign_name" cols="45" rows="3"
+								name="blog_sign_name" id="blog_sign_name" cols="45" rows="8"
 								class="resumeTextarea"></textarea></td>
 					</tr>
 					<tr id="resumeMyIntroForm">
