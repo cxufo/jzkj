@@ -1,0 +1,47 @@
+body
+{
+	background-color: #F3F3F3;
+}
+
+.c-div-body
+{
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 45px;
+	
+}
+
+
+/*---------------------工作发布详细内容主体---------------------*/
+.c-div-bodyContent
+{
+	width: 920px;
+	min-height: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.c-div-jobForm
+{
+	padding: 60px 80px 100px 80px;
+}
+
+.c-table-jobForm tr
+{
+	line-height: 46px;
+}
+
+.c-table-jobForm th
+{
+	font-size: 18px;
+	color: #777777;
+	text-align: right;	
+}
+
+.c-table-jobForm td
+{
+	text-align: center;
+}
+
+
+
