@@ -16,7 +16,7 @@
 <head>
 <base href="<%=BasePath%>">
 
-<title>发布全职简历</title>
+<title>修改兼职简历</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -53,9 +53,10 @@
 					</tr>
 					<tr>
 						<td>性别:</td>
-						<td><input class="resumeRadio" type="radio" value="man"  checked
-							name="partResumeSex" /><span>男</span><input class="resumeRadio"
-							type="radio" value="women" name="partResumeSex" /><span>女</span></td>
+						<td><input class="resumeRadio" type="radio" value="man"
+							checked name="partResumeSex" /><span>男</span><input
+							class="resumeRadio" type="radio" value="women"
+							name="partResumeSex" /><span>女</span></td>
 					</tr>
 					<tr>
 						<td>出生日期:</td>
@@ -65,13 +66,12 @@
 					<tr>
 						<td>学历:</td>
 						<td><select name="cars">
-								<option value="volvo">高中</option>
-								<option value="saab">中专</option>
-								<option value="saab">大专</option>
-								<option value="fiat" selected="selected">本科</option>
-								<option value="audi">硕士</option>
-								<option value="audi">博士</option>
-								<option value="audi">不限</option>
+								<option value="heightSchool">高中</option>
+								<option value="specialty">专科</option>
+								<option value="undergraduate" selected="selected">本科</option>
+								<option value="master">硕士</option>
+								<option value="doctor">博士</option>
+								<option value="unlimited">不限</option>
 						</select></td>
 					</tr>
 					<tr>
@@ -100,7 +100,7 @@
 						</select></td>
 					</tr>
 					<tr>
-						<td>期望薪水:</td>
+						<td>期望日薪:</td>
 						<td><select name="cars">
 								<option value="volvo">40</option>
 								<option value="saab">50</option>
@@ -126,8 +126,21 @@
 								<option value="saab">修文县</option>
 								<option value="fiat">开阳县</option>
 								<option value="audi">清镇市</option>
+
 						</select> <!-- <input class="resumeText" type="text"
 							placeholder="贵州省贵阳市南明区沙冲南路" name="partResumeName" /> --></td>
+					</tr>
+					<tr>
+						<td>期望工作时间:</td>
+						<td><select name="cars">
+								<option value="volvo">星期一</option>
+								<option value="saab">星期二</option>
+								<option value="saab">星期三</option>
+								<option value="fiat">星期四</option>
+								<option value="audi">星期五</option>
+								<option value="audi">星期六</option>
+								<option value="audi" selected="selected">星期日</option>
+						</select></td>
 					</tr>
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro">自我简绍:</td>
@@ -137,7 +150,7 @@
 					</tr>
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro"></td>
-						<td><input id="comBtn" type="submit" value="发布"
+						<td><input id="comBtn" type="submit" value="修改"
 							class="resumeBtn" /></td>
 					</tr>
 				</table>

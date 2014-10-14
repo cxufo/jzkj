@@ -16,7 +16,7 @@
 <head>
 <base href="<%=BasePath%>">
 
-<title>发布全职简历</title>
+<title>修改全职简历</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -65,13 +65,12 @@
 					<tr>
 						<td>学历:</td>
 						<td><select name="cars">
-								<option value="volvo">高中</option>
-								<option value="saab">中专</option>
-								<option value="saab">大专</option>
-								<option value="fiat" selected="selected">本科</option>
-								<option value="audi">硕士</option>
-								<option value="audi">博士</option>
-								<option value="audi">不限</option>
+								<option value="heightSchool">高中</option>
+								<option value="specialty">专科</option>
+								<option value="undergraduate" selected="selected">本科</option>
+								<option value="master">硕士</option>
+								<option value="doctor">博士</option>
+								<option value="unlimited">不限</option>
 						</select></td>
 					</tr>
 					<tr>
@@ -109,7 +108,7 @@
 								<option value="audi">100</option>
 								<option value="audi">200</option>
 								<option value="audi">500以上</option>
-						</select></td>
+						</select>   以上</td>
 					</tr>
 					<tr>
 						<td>期望工作地点:</td>
@@ -137,7 +136,7 @@
 					</tr>
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro"></td>
-						<td><input id="comBtn" type="submit" value="发布"
+						<td><input id="comBtn" type="submit" value="修改"
 							class="resumeBtn" /></td>
 					</tr>
 				</table>

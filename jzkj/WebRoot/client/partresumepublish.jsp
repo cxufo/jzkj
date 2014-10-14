@@ -31,7 +31,7 @@
 <link rel="stylesheet" type="text/css"
 	href="<%=BasePath%>css/zljresume.css">
 <script language="javascript" type="text/javascript"
-	src="My97DatePicker/WdatePicker.js"></script>
+	src="<%=BasePath%>My97DatePicker/WdatePicker.js"></script>
 </head>
 
 <body style="background-color: #F3F3F3;">
@@ -54,30 +54,50 @@
 					<tr>
 						<td>性别:</td>
 						<td><input class="resumeRadio" type="radio" value="man"
-							name="sex" /><span>男</span><input class="resumeRadio"
-							type="radio" value="women" name="sex" /><span>女</span></td>
+							checked name="partResumeSex" /><span>男</span><input
+							class="resumeRadio" type="radio" value="women"
+							name="partResumeSex" /><span>女</span></td>
 					</tr>
 					<tr>
 						<td>出生日期:</td>
-						<td><input class="resumeText" type="text" name="creattime"
+						<td><input class="resumeText" type="text" name="partResume"
 							id="creattimeid" value="" onclick="WdatePicker()" /></td>
 					</tr>
 					<tr>
 						<td>学历:</td>
 						<td><select name="cars">
-								<option value="volvo">高中</option>
-								<option value="saab">中专</option>
-								<option value="saab">大专</option>
-								<option value="fiat" selected="selected">本科</option>
-								<option value="audi">硕士</option>
-								<option value="audi">研究生</option>
-								<option value="audi">博士</option>
+								<option value="heightSchool">高中</option>
+								<option value="specialty">专科</option>
+								<option value="undergraduate" selected="selected">本科</option>
+								<option value="master">硕士</option>
+								<option value="doctor">博士</option>
+								<option value="unlimited">不限</option>
 						</select></td>
 					</tr>
 					<tr>
 						<td>所在地:</td>
 						<td><input class="resumeText" type="text"
 							placeholder="贵州省贵阳市南明区沙冲南路" name="partResumeName" /></td>
+					</tr>
+					<tr>
+						<td>职位类别:</td>
+						<td><select name="cars">
+								<option value="cd">促销/导购</option>
+								<option value="cj">传单/举牌</option>
+								<option value="sx">市调/宣传</option>
+								<option value="lj" selected="selected">老师/家教</option>
+								<option value="ml">模特/礼仪</option>
+								<option value="bz">表演/主持</option>
+								<option value="fb">翻译/编辑</option>
+								<option value="wk">文员/客服</option>
+								<option value="xy">销售/业务</option>
+								<option value="ms">美工/设计</option>
+								<option value="kc">会计/出纳</option>
+								<option value="iy">IT类店员/营业员</option>
+								<option value="jg">技工/工人</option>
+								<option value="fz">服务生/钟点工</option>
+								<option value="other">其他</option>
+						</select></td>
 					</tr>
 					<tr>
 						<td>期望日薪:</td>
@@ -93,8 +113,22 @@
 					</tr>
 					<tr>
 						<td>期望工作地点:</td>
-						<td><input class="resumeText" type="text"
-							placeholder="贵州省贵阳市南明区沙冲南路" name="partResumeName" /></td>
+						<td>贵阳市-<select name="cars">
+								<option value="volvo">花溪区</option>
+								<option value="saab">南明区</option>
+								<option value="saab">云岩区</option>
+								<option value="fiat">白云区</option>
+								<option value="audi">小河区</option>
+								<option value="audi">乌当区</option>
+								<option value="volvo">观山湖区</option>
+								<option value="audi" selected="selected">白云区</option>
+								<option value="saab">息烽县</option>
+								<option value="saab">修文县</option>
+								<option value="fiat">开阳县</option>
+								<option value="audi">清镇市</option>
+
+						</select> <!-- <input class="resumeText" type="text"
+							placeholder="贵州省贵阳市南明区沙冲南路" name="partResumeName" /> --></td>
 					</tr>
 					<tr>
 						<td>期望工作时间:</td>
@@ -116,14 +150,13 @@
 					</tr>
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro"></td>
-						<td><input id="comBtn" type="submit" value="注册"
+						<td><input id="comBtn" type="submit" value="发布"
 							class="resumeBtn" /></td>
 					</tr>
 				</table>
 			</form>
 		</div>
 	</div>
-	sss XXX
 
 	<%@include file="bottom.jsp"%>
 </body>

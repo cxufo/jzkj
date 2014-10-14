@@ -39,7 +39,7 @@
 		<div class="jz-loginjia">
 			<div class="jz-loginkuang">
 				<div class="jz-login-login">登 录</div>
-				<form action="client/top.jsp">
+				<form action="client/partresumepublish.jsp">
 					<div class="jz-login-name">
 						<div class="login-span">用户名：</div>
 						<input id="" class="login_name" type="text" value=""

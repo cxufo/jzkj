@@ -32,13 +32,13 @@
 	<div class="jz-topbar">
 		<div class="jz-topbar-content">
 			<div class="jz-topbar-left">
-				<span><a href="#">手机客服端</a></span>
-				<span><a href="#">关于我们</a></span>
+				<span><a href="javascript:;">手机客服端</a></span>
+				<span><a href="javascript:;">关于我们</a></span>
 			</div>
 			<div class="jz-topbar-right">
-				<span><a href="#">登录</a></span>
-				<span><a href="#">注册</a></span>
-				<span><a href="#">用户中心</a></span>
+				<span><a href="client/login.jsp">登录</a></span>
+				<span><a href="client/personalregister.jsp">注册</a></span>
+				<span><a href="client/partresumepublish.jsp">用户中心</a></span>
 			</div>
 		</div>
 	</div>

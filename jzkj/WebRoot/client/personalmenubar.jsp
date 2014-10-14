@@ -29,6 +29,7 @@
 	height: 80px;
 	background-color: #696969;
 }
+
 .menubar-left {
 	height: 100%;
 	width: 25%;
@@ -46,7 +47,7 @@
 	font-size: 30px;
 	font-family: "Microsoft YaHei";
 	color: #FFFFFF;
-	padding-top:5px;
+	padding-top: 5px;
 }
 
 .leftwww {
@@ -58,7 +59,7 @@
 	color: #FFFFFF;
 	font-size: 18px;
 	font-family: "Microsoft YaHei";
-	margin-top:-8px;
+	margin-top: -8px;
 }
 
 .menubar-right {
@@ -125,14 +126,13 @@
 		</div>
 		<div class="menubar-right">
 			<ul class="rightmenu">
-				<li style="background-color: #AE09FA"><a id="userA" href="#"><img
-						alt="" src="image/hellomy.png">
+				<li style="background-color: #AE09FA"><a id="userA"
+					href="client/partresumepublish.jsp"><img alt=""
+						src="image/hellomy.png">
 						<p>赵承熙赵承熙</p></a>
 					<div id="userL" class="down-menu-item">
 						<div class="down-menu-list">
-							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">退出登录</a>
+							<a style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;" href="client/login.jsp">退出登录</a>
 						</div>
 					</div></li>
 				<li style="background-color: #FAAE09"><a id="workA" href="#"><img
@@ -140,58 +140,53 @@
 						<p>我的工作</p></a>
 					<div id="workL" class="down-menu-item">
 						<div class="down-menu-list">
-							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">报名的工作</a>
+							<a style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;" href="#">报名的工作</a>
 						</div>
 						<div class="down-menu-list">
-							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">获得的工作</a>
+							<a style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;" href="#">获得的工作</a>
 						</div>
 						<div class="down-menu-list">
-							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">推荐的工作</a>
+							<a style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"href="#">推荐的工作</a>
 						</div>
 						<div class="down-menu-list">
-							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">我的评价</a>
+							<a style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;" href="#">我的评价</a>
 						</div>
 					</div></li>
-				<li style="background-color: #93D2F5"><a id="editA" href="#"><img
-						alt="" src="image/editjianli.png">
+				<li style="background-color: #93D2F5"><a id="editA"
+					href="client/partresumeedit.jsp"><img alt=""
+						src="image/editjianli.png">
 						<p>修改简历</p></a>
 					<div id="editL" class="down-menu-item">
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">兼职简历</a>
+								href="client/partresumeedit.jsp">兼职简历编辑</a>
 						</div>
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="#">全职简历</a>
+								href="client/fullresumeedit.jsp">全职简历编辑</a>
 						</div>
 					</div></li>
-				<li style="background-color: #80F91E"><a id="fabuA" href="#"><img
-						alt="" src="image/fabujianli.png">
+				<li style="background-color: #80F91E"><a id="fabuA"
+					href="client/partresumepublish.jsp"><img alt=""
+						src="image/fabujianli.png">
 						<p>发布简历</p></a>
 					<div id="fabuL" class="down-menu-item" style="z-index: 2000;">
-						<div class="down-menu-list" >
+						<div class="down-menu-list">
 							<a
-								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;z-index: 2000;" 
-								href="#">兼职简历</a>
+								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;z-index: 2000;"
+								href="client/partresumepublish.jsp">兼职简历</a>
 						</div>
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;z-index: 2000;"
-								href="#">全职简历</a>
+								href="client/fullresumepublish.jsp">全职简历</a>
 						</div>
 					</div></li>
-				<li style="background-color: #F34F4F"><a href="#"><img
-						alt="" src="image/firstpage.png">
+				<li style="background-color: #F34F4F"><a
+					href="client/taskdetail.jsp"><img alt=""
+						src="image/firstpage.png">
 						<p>首页</p></a></li>
 			</ul>
 		</div>
