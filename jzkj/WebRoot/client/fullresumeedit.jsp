@@ -53,9 +53,10 @@
 					</tr>
 					<tr>
 						<td>性别:</td>
-						<td><input class="resumeRadio" type="radio" value="man"  checked
-							name="partResumeSex" /><span>男</span><input class="resumeRadio"
-							type="radio" value="women" name="partResumeSex" /><span>女</span></td>
+						<td><input class="resumeRadio" type="radio" value="man"
+							checked name="partResumeSex" /><span>男</span><input
+							class="resumeRadio" type="radio" value="women"
+							name="partResumeSex" /><span>女</span></td>
 					</tr>
 					<tr>
 						<td>出生日期:</td>
@@ -65,9 +66,9 @@
 					<tr>
 						<td>学历:</td>
 						<td><select name="cars">
+								<option value="undergraduate" selected="selected">本科</option>
 								<option value="heightSchool">高中</option>
 								<option value="specialty">专科</option>
-								<option value="undergraduate" selected="selected">本科</option>
 								<option value="master">硕士</option>
 								<option value="doctor">博士</option>
 								<option value="unlimited">不限</option>
@@ -81,10 +82,11 @@
 					<tr>
 						<td>职位类别:</td>
 						<td><select name="cars">
+								<option value="lj" selected="selected">老师/家教</option>
 								<option value="cd">促销/导购</option>
 								<option value="cj">传单/举牌</option>
 								<option value="sx">市调/宣传</option>
-								<option value="lj" selected="selected">老师/家教</option>
+
 								<option value="ml">模特/礼仪</option>
 								<option value="bz">表演/主持</option>
 								<option value="fb">翻译/编辑</option>
@@ -108,7 +110,7 @@
 								<option value="audi">100</option>
 								<option value="audi">200</option>
 								<option value="audi">500以上</option>
-						</select>   以上</td>
+						</select> 以上</td>
 					</tr>
 					<tr>
 						<td>期望工作地点:</td>

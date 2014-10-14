@@ -6,7 +6,8 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legen
 }
 
 body {
-	font: 12px/1.5 microsoft yahei;
+	font: 12px/1.5;
+	font-family: "å®‹ä½“";
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -39,14 +40,14 @@ table {
 	border-spacing: 0;
 }
 
-/*top²¿·Ö*/
-/*Õû¸ötopºáÀ¸*/
+/*topï¿½ï¿½ï¿½ï¿½*/
+/*ï¿½ï¿½ï¿½topï¿½ï¿½ï¿½ï¿½*/
 .jz-topbar {
 	height: 22px;
 	width: 100%;
 	background-color: #DCDCDC;
 }
-/*topbarÖÐ¼ä²¿·Ö*/
+/*topbarï¿½Ð¼ä²¿ï¿½ï¿½*/
 .jz-topbar-content {
 	width: 920px;
 	padding: 0 10px;
@@ -74,13 +75,13 @@ table {
 
 .jz-topbar-left span a {
 	color: #555555;
-	font-family: inherit;
+	font-family: "å®‹ä½“";
 	font-style: normal;
 }
 
 .jz-topbar-right span a {
 	color: #555555;
-	font-family: inherit;
+	font-family: "å®‹ä½“";
 	font-style: normal;
 }
 
@@ -94,7 +95,7 @@ table {
 	color: #25D5F4;
 }
 
-/*µ×²¿*/
+/*ï¿½×²ï¿½*/
 .jz-bottombar {
 	height: 100px;
 	width: 100%;
@@ -103,14 +104,14 @@ table {
 	text-align: center;
 	font-size: 14px;
 	color: #555555;
-	font-family: inherit;
+	font-family: "å®‹ä½“";
 	/* position: absolute;
 	top: expression(document.body.clientHeight- this.style.pixelHeight +
 		document.body.scrollTop); */
 }
 
 .jz-bottombar-1 {
-	/*µÚÒ»À¸*/
+	/*ï¿½ï¿½Ò»ï¿½ï¿½*/
 	height: 28px;
 	line-height: 28px;
 	padding-top: 5px;
@@ -127,7 +128,7 @@ table {
 }
 
 .jz-bottombar-2 {
-	/*µÚ¶þÀ¸*/
+	/*ï¿½Ú¶ï¿½ï¿½ï¿½*/
 	height: 28px;
 	line-height: 28px;
 	margin-top: 5px;
@@ -139,11 +140,11 @@ table {
 }
 
 .jz-bottombar-3 {
-	/*µÚÈýÀ¸*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	height: 28px;
 	line-height: 28px;
 }
-/*ÖÐ¼äÖ÷Ìå²¿·Ö*/
+/*ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½å²¿ï¿½ï¿½*/
 .jz-body {
 	
 }

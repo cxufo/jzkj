@@ -30,7 +30,7 @@
 	height: 40px;
 	font-size: 28px;
 	color: #5F5F5F;
-	font-family: "隶书";
+	font-family: "宋体";
 	float: left;
 }
 
@@ -78,7 +78,7 @@
 	border: 1px solid #CCC;
 	float: none;
 	font-size: 14px;
-	font-family: arial, "宋体";
+	font-family: "宋体";
 	color: #555555;
 	padding-left: 10px;
 }
@@ -92,7 +92,7 @@
 	height: 34px;
 	line-height: 17px;
 	font-size: 13px;
-	font-family: serif;
+	font-family: "宋体";
 	color: #636563;
 	background-color: #F7F7F7;
 	display: none;
@@ -100,20 +100,25 @@
 
 .regAgreeForm {
 	height: 50px;
-	width: 268px;
-	margin: 5px auto;
+	width: 350px;
 	line-height: 18px;
+	margin-left:250px;
+	margin-top:10px;
+		color: #636563;
 }
 
 .regCheckbox {
 	margin-right: 5px;
 	margin-top: 20px;
 }
-
+#regAgree:HOVER{
+	color:blue;
+}
 .regBtnForm {
 	height: 50px;
 	width: 268px;
-	margin: 5px auto;
+	margin-top:10px;
+	margin-left:250px;
 }
 
 .regBtn {
@@ -227,7 +232,7 @@ table.ui_border,table.ui_dialog {
 	*display: inline;
 	zoom: 1;
 	vertical-align: top;
-	font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+	font-family: "宋体";
 }
 
 .ui_min b,.ui_max b,.ui_res_t,.ui_res_b {

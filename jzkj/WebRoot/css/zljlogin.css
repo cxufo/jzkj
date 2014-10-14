@@ -21,7 +21,7 @@
 	line-height:60px ;
 	font-size: 25px;
 	color:#ffffff;
-	font-family:font-family:"Times New Roman",Georgia,Serif;
+	font-family:"å®‹ä½“";
 }
 .jz-login-name{
 	margin:15px 14px;
@@ -30,7 +30,7 @@
 	line-height:50px;
 	border: #AEACAC solid 1px;
 	font-size: 20px;
-	color:#BEBABA;/*×ÖÌåÑÕÉ«*/
+	color:#BEBABA;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 	padding-left:10px;
 }
 .login-span{
@@ -53,7 +53,7 @@
 	line-height:50px;
 	border: #AEACAC solid 1px;
 	font-size: 20px;
-	color:#BEBABA;/*×ÖÌåÑÕÉ«*/
+	color:#BEBABA;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 	padding-left:10px;
 }
 .jz-login-psw input{
@@ -78,7 +78,7 @@
 	line-height:29px;
 	text-align: left;
 	font-size: 18px;
-	color:#BEBABA;/*×ÖÌåÑÕÉ«*/
+	color:#BEBABA;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 }
 .login-btn{
 	margin-top:5px;
@@ -87,7 +87,7 @@
 	background-color: #FFEA00; 
 	text-align: center;
 	font-size: 24px;
-	color:#555555;/*×ÖÌåÑÕÉ«*/
+	color:#555555;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«*/
 }
 .login-btn:HOVER {
 	background-color: #FFFF50; 

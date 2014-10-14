@@ -66,9 +66,9 @@
 					<tr>
 						<td>学历:</td>
 						<td><select name="cars">
+						<option value="undergraduate" selected="selected">本科</option>
 								<option value="heightSchool">高中</option>
 								<option value="specialty">专科</option>
-								<option value="undergraduate" selected="selected">本科</option>
 								<option value="master">硕士</option>
 								<option value="doctor">博士</option>
 								<option value="unlimited">不限</option>
@@ -82,10 +82,10 @@
 					<tr>
 						<td>职位类别:</td>
 						<td><select name="cars">
+						<option value="lj" selected="selected">老师/家教</option>
 								<option value="cd">促销/导购</option>
 								<option value="cj">传单/举牌</option>
 								<option value="sx">市调/宣传</option>
-								<option value="lj" selected="selected">老师/家教</option>
 								<option value="ml">模特/礼仪</option>
 								<option value="bz">表演/主持</option>
 								<option value="fb">翻译/编辑</option>

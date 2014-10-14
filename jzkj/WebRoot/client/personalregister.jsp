@@ -37,7 +37,7 @@
 .c-div-leader a {
 	font-size: 28px;
 	color: #5F5F5F;
-	font-family: "隶书";
+	font-family:"宋体";
 }
 </style>
 </head>
@@ -68,7 +68,7 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 										<tr>
 											<td colspan="2"><div class="ui_title_bar">
 													<div class="ui_title" unselectable="on"
-														style="cursor: move;">校园无忧网（www.school51.com）服务协议</div>
+														style="cursor: move;">兼职空间网（www.jzkj.com）服务协议</div>
 													<div class="ui_title_buttons">
 														<a id="regAgreeFormClose" class="ui_close"
 															href="javascript:void(0);" title="关闭(esc键)"
@@ -85,7 +85,7 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 														<span>loading...</span>
 													</div>
 													<iframe name="edit_class" frameborder="0"
-														src="http://www.school51.com/about/agreement.html"
+														src="client/registeragree.html"
 														style="width: 100%; height: 100%; border: 0px none;"></iframe>
 												</div></td>
 										</tr>
@@ -132,8 +132,8 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 	<div class="c-div-leader">
 		<div class="c-div-detail">
 			<div class="c-div-options">
-				<a class="c-a-options" href="javascript:;">兼职招聘</a> <a
-					class="c-a-options" href="javascript:;">全职招聘</a>
+				<a class="c-a-options" href="<%=registerBasePath%>index.jsp">兼职招聘</a> <a
+					class="c-a-options" href="<%=registerBasePath%>index.jsp">全职招聘</a>
 			</div>
 
 			<div class="c-div-publish">
