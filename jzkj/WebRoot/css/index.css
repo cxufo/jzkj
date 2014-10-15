@@ -99,8 +99,20 @@ body
 
 .c-ul-applyList li span
 {
+	display: inline-block;
+	float: left;
 	padding-left: 16px;
 	
+}
+
+.c-ul-applyList li font
+{
+	display: inline-block;
+	width: 326px;
+	height: 36px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 
 .c-ul-applyList li a

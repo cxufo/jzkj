@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
     <%@include file="companymenubar.jsp"%>
     
-    <div class = "c-div-body">    
+    <div class = "c-div-body">
     	<div class = "c-div-bodyContent">
 	    	
 	    	<div class = "c-div-jobForm">

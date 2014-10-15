@@ -92,65 +92,65 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<ul class = "c-ul-applyList">
 					<li>
 						<span>标题：</span>
-						<font>到花溪贵大派发传单</font><br>
+						<font>小学作文老师</font><br>
 						<span>兼职类型：</span>
-						<font>派发传单</font><br>
+						<font>普通兼职</font><br>
 						<span>工作时间：</span>
-						<font>星期一、星期二</font><br>
+						<font>2014-10-14至2014-11-14 8:30至17:30</font><br>
 						<span>工作地点：</span>
-						<font>贵阳花溪</font><br>
+						<font>贵阳云岩区普陀路凯旋门大厦A座21楼3号</font><br>
 						<span>人数：</span>
-						<font>5</font><br>
+						<font>3人</font><br>
 						<span>资薪：</span>
-						<font>100元/每天</font><br>
+						<font>100元/次</font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
 					<li class = "c-li-rightApply">
 						<span>标题：</span>
-						<font>到花溪贵大派发传单</font><br>
+						<font>招钢琴教师和钢琴陪练</font><br>
 						<span>兼职类型：</span>
-						<font>派发传单</font><br>
+						<font>普通兼职</font><br>
 						<span>工作时间：</span>
-						<font>星期一、星期二</font><br>
+						<font>2014-10-14至2014-11-14 8:30至17:30</font><br>
 						<span>工作地点：</span>
-						<font>贵阳花溪</font><br>
+						<font>白云区大山洞白云中路</font><br>
 						<span>人数：</span>
-						<font>5</font><br>
+						<font>5人</font><br>
 						<span>资薪：</span>
-						<font>100元/每天</font><br>
+						<font>55元/小时</font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
 					<li>
 						<span>标题：</span>
-						<font>到花溪贵大派发传单</font><br>
+						<font>兼职招聘派单促销</font><br>
 						<span>兼职类型：</span>
-						<font>派发传单</font><br>
+						<font>普通兼职</font><br>
 						<span>工作时间：</span>
-						<font>星期一、星期二</font><br>
+						<font>星期一、星期二、星期三、星期四、星期五、星期六、星期日</font><br>
 						<span>工作地点：</span>
-						<font>贵阳花溪</font><br>
+						<font>云岩-中华北路</font><br>
 						<span>人数：</span>
-						<font>5</font><br>
+						<font>15人</font><br>
 						<span>资薪：</span>
-						<font>100元/每天</font><br>
+						<font>80元/天 ，日结</font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
 					<li class = "c-li-rightApply">
 						<span>标题：</span>
-						<font>到花溪贵大派发传单</font><br>
+						<font>学生兼职</font><br>
 						<span>兼职类型：</span>
-						<font>派发传单</font><br>
+						<font>普通兼职</font><br>
 						<span>工作时间：</span>
-						<font>星期一、星期二</font><br>
+						<font>2014-10-13至2014-10-31 8:30至17:30</font><br>
 						<span>工作地点：</span>
-						<font>贵阳花溪</font><br>
+						<font>南明区朝阳洞路49号</font><br>
 						<span>人数：</span>
-						<font>5</font><br>
+						<font>10人</font><br>
 						<span>资薪：</span>
-						<font>100元/每天</font><br>
+						<font>50元/天</font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
 				</ul>
