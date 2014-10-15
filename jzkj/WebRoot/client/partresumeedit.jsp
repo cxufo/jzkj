@@ -48,7 +48,7 @@
 				<table>
 					<tr class="contentTR">
 						<td>姓名:</td>
-						<td><input class="resumeText" type="text" placeholder="赵承熙"
+						<td><input class="resumeText" type="text" 
 							name="partResumeName" /></td>
 					</tr>
 					<tr>
@@ -65,7 +65,7 @@
 					</tr>
 					<tr>
 						<td>学历:</td>
-						<td><select name="cars">
+						<td><select name="resumeEducation">
 						<option value="undergraduate" selected="selected">本科</option>
 								<option value="heightSchool">高中</option>
 								<option value="specialty">专科</option>
@@ -81,7 +81,7 @@
 					</tr>
 					<tr>
 						<td>职位类别:</td>
-						<td><select name="cars">
+						<td><select name="resumePosition">
 						<option value="lj" selected="selected">老师/家教</option>
 								<option value="cd">促销/导购</option>
 								<option value="cj">传单/举牌</option>
@@ -100,20 +100,20 @@
 						</select></td>
 					</tr>
 					<tr>
-						<td>期望日薪:</td>
-						<td><select name="cars">
-								<option value="volvo">40</option>
-								<option value="saab">50</option>
-								<option value="saab">60</option>
-								<option value="fiat" selected="selected">80</option>
-								<option value="audi">100</option>
-								<option value="audi">200</option>
-								<option value="audi">500以上</option>
+						<td>期望薪水:</td>
+						<td><select name="resumeExpectSalary">
+								<option value="10to50">10-50</option>
+								<option value="50to70" selected="selected">50-70</option>
+								<option value="80to100">80-100</option>
+								<option value="100to200" >100-200</option>
+								<option value="200to500">200-500</option>
+								<option value="500to1000">500-1000</option>
+								<option value="1000to">1000以上</option>
 						</select></td>
 					</tr>
 					<tr>
 						<td>期望工作地点:</td>
-						<td>贵阳市-<select name="cars">
+						<td>贵阳市-<select name="resumeExpectPlaceOfwork">
 								<option value="volvo">花溪区</option>
 								<option value="saab">南明区</option>
 								<option value="saab">云岩区</option>
@@ -126,13 +126,12 @@
 								<option value="saab">修文县</option>
 								<option value="fiat">开阳县</option>
 								<option value="audi">清镇市</option>
-
 						</select> <!-- <input class="resumeText" type="text"
 							placeholder="贵州省贵阳市南明区沙冲南路" name="partResumeName" /> --></td>
 					</tr>
 					<tr>
 						<td>期望工作时间:</td>
-						<td><select name="cars">
+						<td><select name="resumeExpectWorkingTime">
 								<option value="volvo">星期一</option>
 								<option value="saab">星期二</option>
 								<option value="saab">星期三</option>
@@ -145,7 +144,7 @@
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro">自我简绍:</td>
 						<td><textarea style="width: 352px; height: 87px;"
-								name="blog_sign_name" id="blog_sign_name" cols="45" rows="8"
+								name="resumeSelfIntroduction" id="resumeSelfIntroduction" cols="45" rows="8"
 								class="resumeTextarea"></textarea></td>
 					</tr>
 					<tr id="resumeMyIntroForm">
