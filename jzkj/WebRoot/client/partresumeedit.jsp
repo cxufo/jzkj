@@ -38,11 +38,11 @@
 
 	<div class="resumeTop"><%@include file="personalmenubar.jsp"%></div>
 	<div class="contentBody">
-		<%-- <div class="centent-title">
+		<div class="centent-title">
 			<div class="centent-title-left"
-				style="background-image: url(<%=BasePath%>image/reg-title.png);">发布简历</div>
+				style="background-image: url(<%=BasePath%>image/reg-title.png);">修改简历</div>
 			<div class="centent-title-right">兼职简历</div>
-		</div>  --%>
+		</div> 
 		<div class="cententForm">
 			<form action="">
 				<table>

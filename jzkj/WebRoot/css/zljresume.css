@@ -14,8 +14,9 @@
 .centent-title {
 	width: 100%;
 	height: 40px;
-	background-color: #80EA78;
-	margin-bottom: 40px;
+	/* background-color: #80EA78; */
+	background-color:#18C5D0;
+	margin-bottom: 20px;
 }
 
 .centent-title-left {
@@ -45,7 +46,7 @@
 	width: 800px;
 	min-height: 750px;
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 00px;
 }
 
 .cententForm form table tr {
