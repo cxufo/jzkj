@@ -46,13 +46,13 @@ String titleBasePath = request.getScheme()+"://"+request.getServerName()+":"+req
     	<div class = "c-div-detail">
     	
     		<div class = "c-div-options">
-	    		<a id = "i-a-partTime" class = "c-a-options" href = "javascript:;">兼职招聘</a>
-	    		<a id = "i-a-fullTime" class = "c-a-options" href = "javascript:;">全职招聘</a>
+	    		<a id = "i-a-partTime" class = "c-a-options" href = "<%=titleBasePath%>index.jsp">兼职招聘</a>
+	    		<a id = "i-a-fullTime" class = "c-a-options" href = "<%=titleBasePath%>client/fulljobindex.jsp">全职招聘</a>
     		</div>
     		
     		<div class = "c-div-publish">
-    			<a class = "c-a-publish" href = "javascript:;" style = "background-image: url(<%=titleBasePath%>image/lead1.png)">发布简历</a>
-    			<a class = "c-a-publish" href = "javascript:;" style = "background-image: url(<%=titleBasePath%>image/lead2.png)">发布职位</a>
+    			<a class = "c-a-publish" href = "<%=titleBasePath%>client/partresumepublish.jsp" style = "background-image: url(<%=titleBasePath%>image/lead1.png)">发布简历</a>
+    			<a class = "c-a-publish" href = "<%=titleBasePath%>client/partjobpublish.jsp" style = "background-image: url(<%=titleBasePath%>image/lead2.png)">发布职位</a>
     		</div>
     	</div>
     </div>

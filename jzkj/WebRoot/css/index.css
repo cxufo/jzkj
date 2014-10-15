@@ -32,6 +32,7 @@ body
 {
 	min-height: 64px;
 	border-bottom: 1px dashed #D4D4D4;
+	display: block;
 }
 
 .c-div-listTitle
@@ -91,9 +92,9 @@ body
 	margin-bottom: 26px;
 }
 
-.c-li-singular
+.c-li-rightApply
 {
-	margin-right: 72px;
+	float: right;
 }
 
 .c-ul-applyList li span

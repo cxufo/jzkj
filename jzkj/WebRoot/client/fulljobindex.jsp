@@ -27,10 +27,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- This is my JSP page. <br> -->
     
 	<!--在这里引入头部  -->
-	<%@include file="client/top.jsp"%>
+	<%@include file="top.jsp"%>
 		
 	<!--在这里引入标题及导航  -->
-	<%@include file="client/title.jsp"%>
+	<%@include file="title.jsp"%>
 	
 	
 	<!-- 首页主体 -->
@@ -40,21 +40,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<!-- 招聘选项 -->
 			<div class = "c-div-optionsList">
 			
-				<div id = "i-div-partTimeList">
-					<div class = "c-div-partTimeList">
-						<div class = "c-div-listTitle">兼职分类
+				<div  id = "i-div-fullTimeList">
+					<div class = "c-div-fullTimeList">
+						<div class = "c-div-listTitle">全职分类
 						</div>
 						<div class = "c-div-listDetail">
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
+							<a href="javascript:;">学生全职</a>&nbsp;&nbsp;
+							<a href="javascript:;">学生全职</a>&nbsp;&nbsp;
+							<a href="javascript:;">学生全职</a>&nbsp;&nbsp;
+							<a href="javascript:;">学生全职</a>&nbsp;&nbsp;
 						</div>
 					</div>
 					<div class = "c-div-partTimeList">
-						<div class = "c-div-listTitle">兼职区域
+						<div class = "c-div-listTitle">全职区域
 						</div>
 						<div class = "c-div-listDetail">
 							<a href="javascript:;">南明</a>&nbsp;&nbsp;
@@ -64,7 +62,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 					</div>
 					<div class = "c-div-partTimeList">
-						<div class = "c-div-listTitle">兼职时间
+						<div class = "c-div-listTitle">全职时间
 						</div>
 						<div class = "c-div-listDetail">
 							<a href="javascript:;">星期一</a>&nbsp;&nbsp;
@@ -74,7 +72,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 					</div>
 					<div class = "c-div-partTimeList" style = "border-style: none;">
-						<div class = "c-div-listTitle">兼职标签
+						<div class = "c-div-listTitle">全职标签
 						</div>
 						<div class = "c-div-listDetail">
 							<a href="javascript:;">全职</a>&nbsp;&nbsp;
@@ -93,7 +91,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li>
 						<span>标题：</span>
 						<font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span>
+						<span>全职类型：</span>
 						<font>派发传单</font><br>
 						<span>工作时间：</span>
 						<font>星期一、星期二</font><br>
@@ -109,7 +107,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li class = "c-li-rightApply">
 						<span>标题：</span>
 						<font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span>
+						<span>全职类型：</span>
 						<font>派发传单</font><br>
 						<span>工作时间：</span>
 						<font>星期一、星期二</font><br>
@@ -125,7 +123,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li>
 						<span>标题：</span>
 						<font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span>
+						<span>全职类型：</span>
 						<font>派发传单</font><br>
 						<span>工作时间：</span>
 						<font>星期一、星期二</font><br>
@@ -141,7 +139,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li class = "c-li-rightApply">
 						<span>标题：</span>
 						<font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span>
+						<span>全职类型：</span>
 						<font>派发传单</font><br>
 						<span>工作时间：</span>
 						<font>星期一、星期二</font><br>
@@ -173,7 +171,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	
 	<!--在这里引入底部  -->
-	<%@include file="client/bottom.jsp"%>
+	<%@include file="bottom.jsp"%>
 	
   </body>
 </html>

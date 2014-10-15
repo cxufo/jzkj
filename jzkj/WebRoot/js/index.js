@@ -6,9 +6,15 @@ window.onload = function()
 	var oDivPartTime = document.getElementById("i-div-partTimeList");
 	var oDivFullTime = document.getElementById("i-div-fullTimeList");
 	
-	oAPartTime.className = 'active';
-	oDivPartTime.style.display = 'block';
-	oDivFullTime.style.display = 'none';
+	if(null == oDivFullTime)
+	{
+		oAPartTime.className = 'active';
+	}
+
+	if(null == oDivPartTime)
+	{
+		oAFullTime.className = 'active';
+	}
 	
 	
 	oAFullTime.onmouseover = function()
@@ -18,7 +24,7 @@ window.onload = function()
 	
 	oAFullTime.onmouseout = function()
 	{
-		if(oDivPartTime.style.display == 'block')
+		if(null != oDivPartTime)
 		{
 			oAPartTime.className = 'active';
 		}
@@ -32,25 +38,10 @@ window.onload = function()
 	
 	oAPartTime.onmouseout = function()
 	{
-		if(oDivFullTime.style.display == 'block')
+		if(null != oDivFullTime)
 		{
 			oAFullTime.className = 'active';
 		}
 	};
-	
-	
-	oAPartTime.onclick = function()
-	{
-		oAFullTime.className = 'c-a-options';
-		oAPartTime.className = 'active';
-		oDivFullTime.style.display = 'none';
-		oDivPartTime.style.display = 'block';
-	};
-	
-	oAFullTime.onclick = function()
-	{
-		oAFullTime.className = 'active';
-		oDivPartTime.style.display = 'none';
-		oDivFullTime.style.display = 'block';
-	};
+		
 };
