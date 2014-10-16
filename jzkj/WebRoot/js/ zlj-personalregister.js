@@ -129,7 +129,6 @@ window.onload = function() {
 	regEmail.onblur = function() {
 		regEmail.style.border = 'solid 1px #CCC';
 		regEmail.style.color = '#999999';
-
 		var registerName = /^[a-z0-9_\-]+(\.[_a-z0-9\-]+)*@([_a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|cn|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel)$/;
 		var strLength = getStrLength(regEmail.value);
 		if (registerName.test(regEmail.value)) {
@@ -155,6 +154,10 @@ window.onload = function() {
 			return true;
 		} else {
 			alert("请填写完整的信息");
+			regName.onblur();
+			regPsw.onblur();
+			regLinkPhone.onblur();
+			regEmail.onblur();
 			return false;
 		}
 	}

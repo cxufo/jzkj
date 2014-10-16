@@ -139,24 +139,24 @@
 								href="<%=menuBasePath%>client/login.jsp">退出登录</a>
 						</div>
 					</div></li>
-				<li style="background-color: #FAAE09"><a id="workA" href="<%=menuBasePath%>#"><img
+				<li style="background-color: #FAAE09"><a id="workA" href="<%=menuBasePath%>client/theregistrationwork.jsp"><img
 						alt="" src="<%=menuBasePath%>image/mywork.png">
 						<p>我的工作</p></a>
 					<div id="workL" class="down-menu-item">
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="<%=menuBasePath%>#">报名的工作</a>
+								href="<%=menuBasePath%>client/theregistrationwork.jsp">报名的工作</a>
 						</div>
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="<%=menuBasePath%>#">获得的工作</a>
+								href="<%=menuBasePath%>client/thegetwork.jsp">获得的工作</a>
 						</div>
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="<%=menuBasePath%>#">推荐的工作</a>
+								href="<%=menuBasePath%>client/therecommendwork.jsp">推荐的工作</a>
 						</div>
 						<div class="down-menu-list">
 							<a
@@ -197,7 +197,7 @@
 						</div>
 					</div></li>
 				<li style="background-color: #F34F4F"><a
-					href="<%=menuBasePath%>client/taskdetail.jsp"><img alt=""
+					href="<%=menuBasePath%>index.jsp"><img alt=""
 						src="<%=menuBasePath%>image/firstpage.png">
 						<p>首页</p></a></li>
 			</ul>

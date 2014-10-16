@@ -35,17 +35,19 @@
 .c-div-leader a {
 	font-size: 28px;
 	color: #5F5F5F;
-	font-family: "隶书";
+	font-family: "宋体";
 }
 </style>
 </head>
 
 <body id="body" style="background-color: #F3F3F3;">
 	<div id="agreeFrom" style="position:fixed;display:none;">
-		<div style="position:fixed;width:100%;height:100%;background-color:#000000; z-index: 1000;opacity:0.5;
+		<div
+			style="position:fixed;width:100%;height:100%;background-color:#000000; z-index: 1000;opacity:0.5;
 filter:Alpha(opacity=50); /* IE8 以及更早的浏览器 */">
 		</div>
-		<div style="position:fixed;left: 453px; top: 139px; visibility: visible;  width: 716px; z-index: 1987;opacity:10;
+		<div
+			style="position:fixed;left: 453px; top: 139px; visibility: visible;  width: 716px; z-index: 1987;opacity:10;
 filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 			class="">
 			<table
@@ -66,9 +68,9 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 													<div class="ui_title" unselectable="on"
 														style="cursor: move;">兼职空间网（www.jzkj.com）服务协议</div>
 													<div class="ui_title_buttons">
-															class="ui_res_t"></b></a> --><a id="regAgreeFormClose" class="ui_close"
-															href="javascript:void(0);" title="关闭(esc键)"
-															style="display: inline-block;">×</a>
+														class="ui_res_t"></b></a> --><a id="regAgreeFormClose"
+															class="ui_close" href="javascript:void(0);"
+															title="关闭(esc键)" style="display: inline-block;">×</a>
 													</div>
 												</div></td>
 										</tr>
@@ -128,8 +130,8 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 	<div class="c-div-leader">
 		<div class="c-div-detail">
 			<div class="c-div-options">
-				<a class="c-a-options" href="<%=registerBasePath%>index.jsp">兼职招聘</a> <a
-					class="c-a-options" href="<%=registerBasePath%>index.jsp">全职招聘</a>
+				<a class="c-a-options" href="<%=registerBasePath%>index.jsp">兼职招聘</a>
+				<a class="c-a-options" href="<%=registerBasePath%>index.jsp">全职招聘</a>
 			</div>
 
 			<div class="c-div-publish">
@@ -172,7 +174,7 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 						type="password">
 				</div>
 
-				<div id="regPswRemind" class="regRemind">6-18位字符，可使用字母、数字、下划线的组合</div>
+				<div id="regPswRemind" class="regRemind">6-18位字符，可使用字母、数字、常用特殊字符的组合</div>
 			</div>
 			<div id="comName" class="regItem">
 				<div class="regLable">
@@ -212,24 +214,29 @@ filter:Alpha(opacity=100); /* IE8 以及更早的浏览器 */"
 				</div>
 				<div id="regEmailRemind" class="regRemind">请填写您常用邮箱，我们将通过邮箱进行验证</div>
 			</div>
-			<div id="comAdress" class="regItem">
+			<div id="comAddress" class="regItem">
+				<div class="regLable">
+					<b class="redStar">*</b>详细地址：
+				</div>
+				<div class="regInput">
+					<input id="regLinkAddress" name="regAddress" class="regtext" type="text">
+				</div>
+				<div class="regRemind" id="regLinkAddressRemind">请填写您的公司的详细地址，方便我们与您进行联系</div>
+			</div>
+			<div id="comAgree" class="regItem">
 				<div class="regAgreeForm">
 					<input type="checkbox" id="regCheckbox" class="regCheckbox"
 						name="agreement" value="协议" class="regAgree" />我已阅读并同意<a
 						id="regAgree" href="javascript:;">《兼职空间用户注册协议》</a>
 				</div>
 			</div>
-			<div id="comBtn" class="regItem">
+			<div class="regItem">
 				<div class="regBtnForm">
-					<input type="submit" value="注册" class="regBtn" />
+					<input id="comBtn" type="submit" value="注册" class="regBtn" />
 				</div>
 			</div>
 		</form>
-
 	</div>
-
-
-
 
 
 	<!--顶部导航栏  -->

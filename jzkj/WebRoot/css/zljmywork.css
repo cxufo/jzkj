@@ -1,0 +1,263 @@
+/*该css样式主要是为增加简介表的右边部分提供样式*/
+/**/
+.msg_sender {
+	padding: 20px;
+	height: 106%;
+	/* border: 1px solid #E7E7EB; */
+	/* border: 1px solid #FFFFFF; */
+}
+
+.msg_sender .tab_panel {
+	/* 	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px; */
+	/*原background-color:#E7E7EB;*/
+	background-color: #FFFFFF;
+	min-height: 216px;
+	width: 100%;
+}
+
+.text_input {
+	height: 40px;
+	/* width: 278px; */
+	padding: 6px 0px;
+	/* border-bottom: 1px solid #CCCCCC; */
+	/* border: 1px solid #E7E7EB; */
+	box-shadow: none;
+	border-radius: 5px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+
+.msg_name {
+	/*输入框前的名称宽度设置*/
+	padding-left: 30px;
+	min-height: 40px;
+	min_width: 200px;
+	font-size: 24px;
+	width: 150px;
+	text-align: left;
+	display: inline-block;
+}
+
+.msg_input {
+	/*信息输入框input设置*/
+	width: 600px;
+	line-height: 30px;
+	font-size: 23px;
+	padding-left: 10px; /*这里的值可以改变光标的位置*/
+	border: 1px solid #E7E7EB;
+	outline: 0px none;
+}
+
+.text_ueditor {
+	border: 0 none;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+
+.text_sub {
+	padding: 10px 0 10px 500px;
+	background-color: #FFF;
+	/* 	margin-top: 20px;
+ */
+}
+
+.text_edit_area {
+	/* ueditorcss设置 */
+	
+}
+
+/* table tr td{height:40px} */
+/*右边部输出表格样式设置*/
+body,table {
+	font-size: 14px;
+}
+
+table.msg_table {
+	table-layout: fixed;
+	/* 	border: 1px solid #cad9ea; */
+	color: #666;
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+	bordercolor: #a0c6e5;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei",
+		"微软雅黑", "黑体", Arial, sans-serif;
+}
+
+.msg_table th {
+	background-repeat: repeat-x;
+	/* 	border: 1px solid #cad9ea; */
+	padding: 0 1em 0;
+	height: 40px;
+	overflow: hidden;
+}
+
+.msg_table td {
+	/* border: 1px solid #cad9ea; */
+	/* 	padding: 0 1em 0; */
+	/* maxlength:12;
+	size:12; */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /* for IE */
+	-moz-text-overflow: ellipsis; /* for Firefox,mozilla */
+	line-height: 19px;
+	padding: 10px 15px;
+	color: #666;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid #e8e8e8;
+	border-width: 1px 0 1px 0;
+}
+
+.msg_table tr {
+	height: 40px;
+	overflow: hidden;
+	display: table-row;
+	vertical-align: inherit;
+}
+
+.msg_table tr td a {
+	color: #333;
+}
+/*------------------------------------------------*/
+body {
+	background-color: #F3F3F3;
+}
+
+.c-div-body {
+	width: 100%;
+	background: url("../image/page.png") no-repeat bottom;
+	margin-bottom: 40px;
+}
+
+/*---------------------首页主体---------------------*/
+.c-div-mian {
+	width: 920px;
+	margin: 0 auto;
+}
+
+/*---------------------招聘选项---------------------*/
+.c-div-optionsList {
+	width: 100%;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.c-div-partTimeList,.c-div-fullTimeList {
+	min-height: 64px;
+	border-bottom: 1px dashed #D4D4D4;
+	display: block;
+}
+
+.c-div-listTitle {
+	float: left;
+	width: 186px;
+	height: 34px;
+	margin: 15px 0px;
+	line-height: 34px;
+	background-color: #18C5D0;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+
+.c-div-listDetail {
+	padding-top: 15px;
+	width: 714px;
+	line-height: 32px;
+	padding-left: 206px;
+	font-size: 15px;
+}
+
+.c-div-listDetail a {
+	color: #5F5F5F;
+}
+
+.c-div-listDetail a:HOVER {
+	color: #18C5D0;
+}
+
+/*---------------------我要报名---------------------*/
+.c-div-apply {
+	width: 100%;
+	min-height: 1200px;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.c-ul-applyList {
+	margin-bottom: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+.c-ul-applyList li {
+	float: left;
+	padding-top: 18px;
+	width: 280px;
+	height: 265px;
+	border-left:10px solid #F3F3F3;
+	border-right:10px solid #F3F3F3;
+	background-color: white;
+	line-height: 36px;
+	font-size: 16px;
+	margin-bottom: 40px;
+	background-color: white;
+}
+
+.c-li-rightApply {
+	float: right;
+}
+
+.c-ul-applyList li span {
+	display: inline-block;
+	float: left;
+	padding-left: 16px;
+}
+
+.c-ul-applyList li font {
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.c-ul-applyList li a {
+	display: block;
+	height: 51px;
+	line-height: 51px;
+	text-align: center;
+	font-size: 26px;
+	color: white;
+	background-color: #2ED4F2;
+}
+
+/*---------------------底部分页---------------------*/
+.c-div-paging {
+	height: 80px;
+	line-height: 70px;
+	text-align: center;
+}
+
+.c-div-paging a {
+	display: inline-block;
+	width: 90px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	border: 1px solid #D4D4D4;
+	text-align: center;
+	color: #949494;
+}
+
+.c-div-paging a:HOVER {
+	color: #949494;
+}
+
+.paging-active {
+	background-color: #BBBBBB;
+}

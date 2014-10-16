@@ -7,7 +7,7 @@
 .contentBody {
 	width: 920px;
 	min-height: 800px;
-	margin: 45px  auto;
+	margin: 45px auto;
 	background-color: #FFFFFF;
 }
 
@@ -15,7 +15,7 @@
 	width: 100%;
 	height: 40px;
 	/* background-color: #80EA78; */
-	background-color:#18C5D0;
+	background-color: #18C5D0;
 	margin-bottom: 20px;
 }
 
@@ -43,10 +43,10 @@
 }
 
 .cententForm {
-	width: 800px;
-	min-height: 750px;
+	min-height: 800px;
 	margin: 0 auto;
-	padding-top: 00px;
+	background-color: #F3F3F3;
+	
 }
 
 .cententForm form table tr {
@@ -66,7 +66,7 @@
 	padding-right: 10px;
 	/* font-family:Microsoft YaHei;
     font-weight:bold; */
-    color:#777777;
+	color: #777777;
 }
 
 .cententForm form table tr td:last-child {
@@ -102,7 +102,7 @@
 	border: 1px solid #CCC;
 	float: none;
 	font-size: 14px;
-	font-family:"宋体";
+	font-family: "宋体";
 	color: #555555;
 	padding-left: 10px;
 }
@@ -110,21 +110,24 @@
 .resumeTextarea {
 	height: 320px;
 	width: 500px;
-	vertical-align:text-top;
+	vertical-align: text-top;
 	border: 1px solid #CCC;
-	vertical-align:sub;
+	vertical-align: sub;
 }
-#resumeMyIntro{
+
+#resumeMyIntro {
 	line-height: 25px;
 }
-#resumeMyIntroForm{
-	clear:both;
+
+#resumeMyIntroForm {
+	clear: both;
 }
+
 .resumeBtn {
 	width: 238px;
 	height: 50px;
-	margin-top:50px;
-	margin-left:-100px; 
+	margin-top: 50px;
+	margin-left: -100px;
 	background-color: #18C5D0;
 	line-height: 50px;
 	font-size: 25px;

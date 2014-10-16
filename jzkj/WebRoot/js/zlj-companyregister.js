@@ -21,6 +21,8 @@ window.onload = function() {
 	var regEmailRemind = document.getElementById('regEmailRemind');// 联系邮箱提示框
 	var regPswRepeat = document.getElementById('regPswRepeat');// 密码重复输入框
 	var regPswRemindRepeat = document.getElementById('regPswRemindRepeat');// 密码重复提示框
+	var regLinkAddress = document.getElementById('regLinkAddress');// 地址输入框
+	var regLinkAddressRemind = document.getElementById('regLinkAddressRemind');// 地址输入提示框
 
 	regName.onfocus = function() {
 		regName.style.border = 'solid 1px #7ABD54';
@@ -54,9 +56,10 @@ window.onload = function() {
 	regPsw.onblur = function() {
 		regPsw.style.border = 'solid 1px #CCC';
 		regPsw.style.color = '#999999';
-		var registerName =/^.*[A-Za-z0-9\\w_-]+.*$/;
+		var registerName = /^.*[A-Za-z0-9\\w_-]+.*$/;
 		var strLength = getStrLength(regPsw.value);
-		if (registerName.test(regPsw.value)&&strLength<=18&&strLength>=6) {
+		if (registerName.test(regPsw.value) && strLength <= 18
+				&& strLength >= 6) {
 			regPswRemind.style.display = 'none';
 			regPswRemind.style.border = 'solid 1px #CCC';
 			regPswRemind.style.color = '#999999';
@@ -70,18 +73,18 @@ window.onload = function() {
 			return false;
 		}
 	}
-	
+
 	regPswRepeat.onfocus = function() {
 		regPswRepeat.style.border = 'solid 1px #7ABD54';
 		regPswRepeat.style.color = '#555555';
-		/*regPswRemindRepeat.style.display = 'block';*/
+		/* regPswRemindRepeat.style.display = 'block'; */
 	}
 	regPswRepeat.onblur = function() {
 		regPswRepeat.style.border = 'solid 1px #CCC';
 		regPswRepeat.style.color = '#999999';
 		var repeatPsw = regPswRepeat.value;
 		var password = regPsw.value;
-		if (repeatPsw==password) {
+		if (repeatPsw == password) {
 			regPswRemindRepeat.style.display = 'none';
 			regPswRemindRepeat.style.border = 'solid 1px #CCC';
 			regPswRemindRepeat.style.color = '#999999';
@@ -95,7 +98,7 @@ window.onload = function() {
 			return false;
 		}
 	}
-	
+
 	regLinkman.onfocus = function() {
 		regLinkman.style.border = 'solid 1px #7ABD54';
 		regLinkmanRemind.style.display = 'block';
@@ -173,26 +176,59 @@ window.onload = function() {
 			return false;
 		}
 	}
-	var regCheckbox = document.getElementById('regCheckbox');
-	var comBtn = document.getElementById('comBtn');
-	comBtn.onclick = function() {
-		if(regName.onblur()&&regPsw.onblur()&&regPswRepeat.onblur()&&regLinkPhone.onblur()&&regEmail.onblur()&&regCheckbox.checked){
+	regLinkAddress.onfocus = function() {
+		regLinkAddress.style.border = 'solid 1px #7ABD54';
+		regLinkAddressRemind.style.display = 'block';
+		regLinkAddress.style.color = '#555555';
+	}
+	regLinkAddress.onblur = function() {
+		regLinkAddress.style.border = 'solid 1px #CCC';
+		regLinkAddress.style.color = '#999999';
+		var registerName = /^[A-Za-z0-9\u4e00-\u9fa5]{2,50}$/;
+		var strLength = getStrLength(regLinkAddress.value);
+		if (registerName.test(regLinkAddress.value)) {
+			regLinkAddressRemind.style.display = 'none';
+			regLinkAddressRemind.style.border = 'solid 1px #CCC';
+			regLinkAddressRemind.style.color = '#999999';
+			regLinkAddressRemind.style.background = 'solid 1px #F7F7F7';
 			return true;
-		}else{
-			alert("请填写完整的信息");
+		} else {
+			regLinkAddressRemind.style.display = 'block';
+			regLinkAddressRemind.style.border = 'solid 1px #FFBDBE';
+			regLinkAddressRemind.style.background = 'solid 1px #FFEBEB';
+			regLinkAddressRemind.style.color = '#FF0000';
 			return false;
 		}
 	}
-	/*点击弹出注册协议框*/
+
+	var regCheckbox = document.getElementById('regCheckbox');
+	var comBtn = document.getElementById('comBtn');
+	comBtn.onclick = function() {
+		if (regName.onblur() && regPsw.onblur() && regPswRepeat.onblur()
+				&& regLinkPhone.onblur() && regEmail.onblur()&&regLinkman.onblur()
+				&& regLinkAddress.onblur() && regCheckbox.checked) {
+			return true;
+		} else {
+			alert("请填写完整的信息");
+			regName.onblur();
+			regPsw.onblur();
+			regLinkman.onblur();
+			regLinkPhone.onblur();
+			regEmail.onblur();
+			regLinkAddress.onblur();
+			return false;
+		}
+	}
+	/* 点击弹出注册协议框 */
 	var regAgree = document.getElementById('regAgree');
-	regAgree.onclick=function(){
+	regAgree.onclick = function() {
 		var agreeFrom = document.getElementById('agreeFrom');
-		agreeFrom.style.display="block";
+		agreeFrom.style.display = "block";
 	}
 	var regAgreeFormClose = document.getElementById('regAgreeFormClose');
-	regAgreeFormClose.onclick=function(){
+	regAgreeFormClose.onclick = function() {
 		var agreeFrom = document.getElementById('agreeFrom');
-		agreeFrom.style.display="none";
+		agreeFrom.style.display = "none";
 	}
-	
+
 }

@@ -1,97 +1,115 @@
 /**/
-.jz-loginjia{
-	width:400px;
-	height:100%;
-	margin:0 auto;
-	position:relative; 
-	
+.jz-loginjia {
+	width: 400px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
 }
-.jz-loginkuang{
-	height:300px;
-	width:100%;
+
+.jz-loginkuang {
+	height: 300px;
+	width: 100%;
 	position: absolute;
-	top:25%;
+	top: 25%;
 	border: #AEACAC solid 1px;
 }
-.jz-login-login{
-	height:60px;
-	width:100%;
+
+.jz-login-login {
+	height: 60px;
+	width: 100%;
 	background-color: #25D5F4;
 	text-align: center;
-	line-height:60px ;
+	line-height: 60px;
 	font-size: 25px;
-	color:#ffffff;
-	font-family:"宋体";
+	color: #ffffff;
+	font-family: "宋体";
 }
-.jz-login-name{
-	margin:15px 14px;
-	margin-bottom:20px;
-	height:50px;
-	line-height:50px;
+
+.jz-login-name {
+	margin: 15px 14px;
+	margin-bottom: 20px;
+	height: 50px;
+	line-height: 50px;
 	border: #AEACAC solid 1px;
 	font-size: 20px;
-	color:#BEBABA;/*������ɫ*/
-	padding-left:10px;
+	color: #BEBABA; /*������ɫ*/
+	padding-left: 10px;
 }
-.login-span{
-	float:left;
-	width:80px;
-	height:100%;
+
+.login-span {
+	float: left;
+	width: 80px;
+	height: 100%;
 	text-align: justify;
 }
-.jz-login-name input{
-	float:left;
-	height:48px;
-	line-height: 40px;
-	width:260px;
+
+.jz-login-name input {
+	float: left;
+	height: 50px;
+	line-height: 25px;
+	padding-left: 10px;
+	width: 280px;
 	font-size: 24px;
+	color:#333333;
+	border: 0;
+	width: 280px;
 }
-.jz-login-psw{
-	margin:15px 14px;
-	margin-bottom:20px;
-	height:50px;
-	line-height:50px;
+
+.jz-login-psw {
+	margin: 15px 14px;
+	margin-bottom: 20px;
+	height: 50px;
+	line-height: 50px;
 	border: #AEACAC solid 1px;
 	font-size: 20px;
-	color:#BEBABA;/*������ɫ*/
-	padding-left:10px;
+	color: #BEBABA; /*������ɫ*/
+	padding-left: 10px;
 }
-.jz-login-psw input{
-	float:left;
-	height:48px;
-	line-height: 40px;
-	width:260px;
+
+.jz-login-psw input {
+	float: left;
+	height: 50px;
+	line-height: 25px;
+	padding-left: 10px;
+	width: 280px;
 	font-size: 24px;
+	color:#333333;
 }
-.jz-login-choise{
-	margin:15px 14px;
-	height:60px;
-	line-height:50px;
+
+.jz-login-choise {
+	margin: 15px 14px;
+	height: 60px;
+	line-height: 50px;
 }
-.login-choise{
-	float:left;
-	width:180px;
-	height:60px;
+
+.login-choise {
+	float: left;
+	width: 180px;
+	height: 60px;
 }
-.choise-readio{
-	height:29px;
-	line-height:29px;
+
+.choise-readio {
+	height: 29px;
+	line-height: 29px;
 	text-align: left;
 	font-size: 18px;
-	color:#BEBABA;/*������ɫ*/
+	color: #BEBABA; /*������ɫ*/
 }
-.login-btn{
-	margin-top:5px;
-	height:50px;
-	width:190px;
-	background-color: #FFEA00; 
+
+.login-btn {
+	margin-top: 5px;
+	height: 50px;
+	width: 190px;
+	background-color: #FFEA00;
 	text-align: center;
 	font-size: 24px;
-	color:#555555;/*������ɫ*/
+	color: #555555; /*������ɫ*/
 }
+
 .login-btn:HOVER {
-	background-color: #FFFF50; 
+	background-color: #FFFF50;
 }
+
 .login-btn:ACTIVE {
-	background-color: #FFC000; 
+	background-color: #FFC000;
 }

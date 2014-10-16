@@ -46,7 +46,7 @@
 							name="loginName" />
 					</div>
 					<div class="jz-login-psw">
-						<div class="login-span">密&nbsp&nbsp&nbsp&nbsp码 :</div>
+						<div class="login-span">密&nbsp;码 :</div>
 						<input id="" class="login_name" type="password" name="loginPsw" />
 					</div>
 					<div class="jz-login-choise">
