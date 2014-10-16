@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>发布全职工作 </title>
+    <title>全职工作修改页 </title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -32,8 +32,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	
 			 <div class="centent-title">
 				<div class="centent-title-left"
-					style="background-image: url(<%=basePath%>image/reg-title.png);">发布工作</div>
-				<div class="centent-title-right">全职工作</div>
+					style="background-image: url(<%=basePath%>image/reg-title.png);">修改工作</div>
+				<div class="centent-title-right">全职工作修改页</div>
 			</div>
 	    	
 	    	<div class = "c-div-jobForm">
@@ -144,7 +144,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    				</tr>
 	    				
 						<tr>
-							<td colspan = "2" style = "text-align: center;"><input id="publishBtn" type="submit" value="发布" /></td>
+							<td colspan = "2" style = "text-align: center;"><input id="publishBtn" type="submit" value="修改" /></td>
 						</tr>
 	    			</table>
 	    		</form>

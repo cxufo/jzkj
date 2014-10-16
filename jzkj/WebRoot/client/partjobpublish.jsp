@@ -30,6 +30,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class = "c-div-body">
     	<div class = "c-div-bodyContent">
 	    	
+			 <div class="centent-title">
+				<div class="centent-title-left"
+					style="background-image: url(<%=basePath%>image/reg-title.png);">发布工作</div>
+				<div class="centent-title-right">兼职工作</div>
+			</div>
+	    	
 	    	<div class = "c-div-jobForm">
 	    		<form action="">
 	    			<table class = "c-table-jobForm">
@@ -38,8 +44,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<td><input type = "text" name = "jobTitle" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>兼职类别:</th>
-	    					<td><input type = "text" name = "jobType" /></td>
+	    					<th>职位类别:</th>
+	    					<td>
+		    					<select name="jobType">
+									<option value="studentpartjob" selected="selected">学生兼职</option>
+									<option value="lj">老师/家教</option>
+									<option value="cd">促销/导购</option>
+									<option value="cj">传单/举牌</option>
+									<option value="sx">市调/宣传</option>
+									<option value="ml">模特/礼仪</option>
+									<option value="bz">表演/主持</option>
+									<option value="fb">翻译/编辑</option>
+									<option value="wk">文员/客服</option>
+									<option value="xy">销售/业务</option>
+									<option value="ms">美工/设计</option>
+									<option value="kc">会计/出纳</option>
+									<option value="iy">IT类店员/营业员</option>
+									<option value="jg">技工/工人</option>
+									<option value="fz">服务生/钟点工</option>
+									<option value="other">其他</option>
+								</select>
+	    					</td>
 	    				</tr>
 	    				<tr>
 	    					<th>招聘人数:</th>
@@ -53,13 +78,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<th>学历:</th>
 	    					<td>
 		    					<select name="degree">
-									<option value="senior">高中</option>
-									<option value="saab">中专</option>
-									<option value="saab">大专</option>
-									<option value="fiat" selected="selected">本科</option>
-									<option value="audi">硕士</option>
-									<option value="audi">研究生</option>
-									<option value="audi">博士</option>
+									<option value="seniorHigh">高中</option>
+									<option value="specialty">大专</option>
+									<option value="undergraduate" selected="selected">本科</option>
+									<option value="master">硕士研究生</option>
+									<option value="doctor">博士</option>
+								<option value="unlimited">不限</option>
 								</select>
 	    					</td>
 	    				</tr>
@@ -70,7 +94,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    				<tr>
 	    					<th>性别要求:</th>
 	    					<td>
-		    					<input type = "text" name = "gender" />
+		    					<select name="gender">
+									<option value="male">男</option>
+									<option value="female">女</option>
+									<option value="unlimited" selected="selected">不限</option>
+								</select>
 	    					</td>
 	    				</tr>
 	    				<tr>
@@ -102,10 +130,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<td><input type = "text" name = "interviewPlace" /></td>
 	    				</tr>
 	    				<tr>
-	    				<tr>
 	    					<th>职位描述:</th>
 	    					<td><textarea name = "jobDescribe"></textarea></td>
 	    				</tr>
+	    				<tr>
 	    					<th>具体要求:</th>
 	    					<td><textarea name = "moreRequire"></textarea></td>
 	    				</tr>
@@ -113,6 +141,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<th>发布日期:</th>
 	    					<td><input type="text" name="publishTime" onclick="WdatePicker()" /></td>
 	    				</tr>
+	    				
+						<tr>
+							<td colspan = "2" style = "text-align: center;"><input id="publishBtn" type="submit" value="发布" /></td>
+						</tr>
 	    			</table>
 	    		</form>
 	    	</div>

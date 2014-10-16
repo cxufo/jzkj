@@ -21,6 +21,37 @@ body
 	background-color: white;
 }
 
+.centent-title {
+	width: 100%;
+	height: 40px;
+	/* background-color: #80EA78; */
+	background-color:#18C5D0;
+	margin-bottom: 20px;
+}
+
+.centent-title-left {
+	float: left;
+	height: 40px;
+	width: 200px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 28px;
+	font-family: "宋体";
+	color: #18C5D0;
+	background-size: cover;
+}
+
+.centent-title-right {
+	line-height: 40px;
+	width: 600px;
+	padding-left: 100px;
+	height: 40px;
+	font-size: 28px;
+	color: #5F5F5F;
+	font-family: "宋体";
+	float: left;
+}
+
 .c-div-jobForm
 {
 	padding: 60px 80px 100px 80px;
@@ -64,3 +95,13 @@ body
 	margin-top: 6px;
 }
 
+
+#publishBtn {
+	width: 238px;
+	height: 50px;
+	margin-top:50px;
+	background-color: #18C5D0;
+	line-height: 50px;
+	font-size: 25px;
+	color: #555555;
+}

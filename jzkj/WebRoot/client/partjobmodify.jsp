@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>发布全职工作 </title>
+    <title>兼职工作修改页</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -32,22 +32,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	
 			 <div class="centent-title">
 				<div class="centent-title-left"
-					style="background-image: url(<%=basePath%>image/reg-title.png);">发布工作</div>
-				<div class="centent-title-right">全职工作</div>
+					style="background-image: url(<%=basePath%>image/reg-title.png);">修改工作</div>
+				<div class="centent-title-right">兼职工作修改页</div>
 			</div>
 	    	
 	    	<div class = "c-div-jobForm">
 	    		<form action="">
 	    			<table class = "c-table-jobForm">
 	    				<tr>
-	    					<th>全职职位标题:</th>
+	    					<th>兼职职位标题:</th>
 	    					<td><input type = "text" name = "jobTitle" /></td>
 	    				</tr>
 	    				<tr>
 	    					<th>职位类别:</th>
 	    					<td>
 		    					<select name="jobType">
-									<option value="lj" selected="selected">老师/家教</option>
+									<option value="studentpartjob" selected="selected">学生兼职</option>
+									<option value="lj">老师/家教</option>
+									<option value="cd">促销/导购</option>
+									<option value="cj">传单/举牌</option>
+									<option value="sx">市调/宣传</option>
+									<option value="ml">模特/礼仪</option>
+									<option value="bz">表演/主持</option>
 									<option value="fb">翻译/编辑</option>
 									<option value="wk">文员/客服</option>
 									<option value="xy">销售/业务</option>
@@ -115,8 +121,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<td><input type = "text" name = "workplace" /></td>
 	    				</tr>
 	    				<tr>
+	    					<th>工作时间:</th>
+	    					<td><input type = "text" name = "worktime" /></td>
+	    				</tr>
+	    				<tr>
 	    					<th>工资:</th>
 	    					<td><input type = "text" name = "salary" /></td>
+	    				</tr>
+	    				<tr>
+	    					<th>职位标签:</th>
+	    					<td><input type = "text" name = "jobLable" /></td>
 	    				</tr>
 	    				<tr>
 	    					<th>面试时间:</th>
@@ -127,15 +141,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    					<td><input type = "text" name = "interviewPlace" /></td>
 	    				</tr>
 	    				<tr>
-	    					<th>职位标签:</th>
-	    					<td><input type = "text" name = "jobLable" /></td>
-	    				</tr>
-	    				<tr>
 	    					<th>职位描述:</th>
 	    					<td><textarea name = "jobDescribe"></textarea></td>
 	    				</tr>
 	    				<tr>
-	    					<th>工作内容:</th>
+	    					<th>具体要求:</th>
 	    					<td><textarea name = "moreRequire"></textarea></td>
 	    				</tr>
 	    				<tr>
@@ -144,7 +154,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    				</tr>
 	    				
 						<tr>
-							<td colspan = "2" style = "text-align: center;"><input id="publishBtn" type="submit" value="发布" /></td>
+							<td colspan = "2" style = "text-align: center;"><input id="publishBtn" type="submit" value="修改" /></td>
 						</tr>
 	    			</table>
 	    		</form>
