@@ -90,7 +90,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<!-- 我要报名 -->
 			<div class = "c-div-apply">
 				<ul class = "c-ul-applyList">
-					<li>
+					<li class = "c-li-leftApply">
 						<span>标题：</span>
 						<font>小学作文老师</font><br>
 						<span>兼职类型：</span>
@@ -106,7 +106,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
-					<li class = "c-li-rightApply">
+					<li>
 						<span>标题：</span>
 						<font>招钢琴教师和钢琴陪练</font><br>
 						<span>兼职类型：</span>
@@ -122,7 +122,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
-					<li>
+					<li class = "c-li-leftApply">
 						<span>标题：</span>
 						<font>兼职招聘派单促销</font><br>
 						<span>兼职类型：</span>
@@ -138,7 +138,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href = "javascript:;">我要报名</a>
 					</li>
 					
-					<li class = "c-li-rightApply">
+					<li>
 						<span>标题：</span>
 						<font>学生兼职</font><br>
 						<span>兼职类型：</span>
