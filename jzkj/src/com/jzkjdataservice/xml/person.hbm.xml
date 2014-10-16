@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.Person" table="person">
+      <id name="pId" column="pId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="userName" column="userName" type="string"></property>
+      <property name="userPassword" column="userPassword" type="string"></property>
+      <property name="phone" column="phone" type="string"></property>
+      <property name="mailBox" column="mailBox" type="string"></property>
+      <property name="ptjCount" column="ptjCount" type="int"></property>
+      <property name="meetCount" column="meetCount" type="int"></property>
+      <property name="score" column="score" type="int"></property>
+      <property name="account" column="account" type="int"></property>
+      <property name="level" column="level" type="string"></property>
+      <property name="registerTime" column="registerTime" type="string"></property>
+      <one-to-one name="presume" class="com.jzkjdataservice.domain.PResume" property-ref="person"/>
+      <one-to-one name="fresume" class="com.jzkjdataservice.domain.FResume" property-ref="person"/>
+      <set name="prboxs" table="p_resume_box" cascade="all" inverse="true" lazy="false">
+          <key column="sendId"/>
+          <one-to-many class="com.jzkjdataservice.domain.PResumeBox"/>
+      </set>
+      <set name="frboxs" table="f_resume_box" cascade="all" inverse="true" lazy="false">
+          <key column="sendId"/>
+          <one-to-many class="com.jzkjdataservice.domain.FResumeBox"/>
+      </set>
+  </class>
+</hibernate-mapping>

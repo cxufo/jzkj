@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+  <session-factory>
+   <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="connection.url">jdbc:mysql://114.215.136.50:3306/jzkj?useUnicode=true&amp;characterEncoding=utf-8</property>
+   <property name="connection.username">root</property>
+   <property name="connection.password">1389c21ad3</property>
+   <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property> 
+   <property name="hbm2ddl.auto">update</property>
+   <mapping resource="com/jzkjdataservice/xml/administrator.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/jobtype.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/company.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/fcomment.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/fjob.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/fresume.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/fresumebox.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/pcomment.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/person.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/pjob.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/presume.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/presumebox.hbm.xml"/>
+   <mapping resource="com/jzkjdataservice/xml/tips.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

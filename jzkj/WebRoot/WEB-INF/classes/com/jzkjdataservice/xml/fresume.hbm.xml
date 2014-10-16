@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.FResume" table="ftj_Resume">
+      <id name="ftjId" column="ftjId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="name" column="name" type="string"></property>
+      <property name="sex" column="sex" type="string"></property>
+      <property name="birthday" column="birthday" type="string"></property>
+      <property name="workType" column="workType" type="string"></property>
+      <property name="workPlace" column="workPlace" type="string"></property>
+      <property name="salary" column="salary" type="string"></property>
+      <property name="education" column="education" type="string"></property>
+      <property name="jobExperience" column="jobExperience" type="string"></property>
+      <property name="introduction" column="introduction" type="string"></property>
+      <property name="location" column="location" type="string"></property>
+      <many-to-one name="person" class="com.jzkjdataservice.domain.Person" column="pId" cascade="all"
+      lazy="false" unique="true"/>
+  </class>
+</hibernate-mapping>

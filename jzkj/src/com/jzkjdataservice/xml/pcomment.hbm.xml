@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.Pcomment" table="pcomment">
+      <id name="commentId" column="commentId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="score" column="score" type="float"></property>
+      <property name="content" column="content" type="string"></property>
+      <property name="personId" column="personId" type="int"></property>
+      <property name="cDate" column="cDate" type="string"></property>
+      <many-to-one name="company" class="com.jzkjdataservice.domain.Company" column="cId" lazy="false" not-null="true"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.JobType" table="jobType">
+      <id name="typeId" column="typeId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="jobType" column="jobType" type="string"></property>
+      <property name="jobSign" column="jobSign" type="string"></property>
+  </class>
+</hibernate-mapping>

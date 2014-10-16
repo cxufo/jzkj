@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.Tip" table="tips">
+      <id name="tipsId" column="tipsId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="tipsContent" column="tipsContent" type="string"></property>
+      <set name="pjobs" table="ptJob" cascade="all" inverse="true" lazy="false">
+          <key column="tipsId"/>
+          <one-to-many class="com.jzkjdataservice.domain.PJob"/>
+      </set>
+      <set name="fjobs" table="ftJob" cascade="all" inverse="true" lazy="false">
+          <key column="tipsId"/>
+          <one-to-many class="com.jzkjdataservice.domain.FJob"/>
+      </set>     
+  </class>
+</hibernate-mapping>

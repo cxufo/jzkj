@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.PJob" table="ptJob">
+      <id name="ptJobId" column="ptJobId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="jobTitle" column="jobTitle" type="string"></property>
+      <property name="ptjType" column="ptjType" type="string"></property>
+      <property name="rCount" column="rCount" type="int"></property>
+      <property name="bCount" column="bCount" type="int"></property>
+      <property name="education" column="education" type="string"></property>
+      <property name="jobExperiense" column="jobExperiense" type="string"></property>
+      <property name="sex" column="sex" type="string"></property>
+      <property name="age" column="age" type="string"></property>
+      <property name="workPlace" column="workPlace" type="string"></property>
+      <property name="workTime" column="workTime" type="string"></property>
+      <property name="wage" column="wage" type="string"></property>
+      <property name="jobSign" column="jobSign" type="string"></property>
+      <property name="meetTime" column="meetTime" type="string"></property>
+      <property name="meetPlace" column="meetPlace" type="string"></property>
+      <property name="detail" column="detail" type="string"></property>
+      <property name="publishTime" column="publishTime" type="string"></property>
+      <property name="state" column="state" type="string"></property>
+      <many-to-one name="company" class="com.jzkjdataservice.domain.Company" column="cId" lazy="false"/>
+      <many-to-one name="tips" class="com.jzkjdataservice.domain.Tip" column="tipsId" lazy="false"/>
+  </class>
+</hibernate-mapping>

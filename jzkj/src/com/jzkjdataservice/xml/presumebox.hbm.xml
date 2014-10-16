@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.jzkjdataservice.domain.PResumeBox" table="p_resume_box">
+      <id name="sendId" column="sendId" type="int">
+      	<generator class="native"/>
+      </id>
+      <property name="ptJobId" column="ptJobId" type="int"></property>
+      <property name="jobTitle" column="jobTitle" type="string"></property>
+      <property name="wage" column="wage" type="string"></property>
+      <property name="time" column="time" type="string"></property>
+      <property name="isGetJob" column="isGetJob" type="string"></property>
+      <property name="isComment" column="isComment" type="string"></property>
+      <many-to-one name="person" class="com.jzkjdataservice.domain.Person" column="pId" lazy="false" not-null="true"/>
+  </class>
+</hibernate-mapping>
