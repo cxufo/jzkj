@@ -1,8 +1,14 @@
+@CHARSET "UTF-8";
+body{
+	text-align: center;/*设置内容居中，主要是兼容IE*/
+	
+}
+
 /*该css样式主要是为增加简介表的右边部分提供样式*/
 /**/
 .msg_sender {
-	padding: 20px;
-	height: 106%;
+	padding: 0px;
+	margin-bottom:30px;
 	/* border: 1px solid #E7E7EB; */
 	/* border: 1px solid #FFFFFF; */
 }
@@ -70,7 +76,7 @@
 /* table tr td{height:40px} */
 /*右边部输出表格样式设置*/
 body,table {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 table.msg_table {
@@ -88,7 +94,6 @@ table.msg_table {
 .msg_table th {
 	background-repeat: repeat-x;
 	/* 	border: 1px solid #cad9ea; */
-	padding: 0 1em 0;
 	height: 40px;
 	overflow: hidden;
 }
@@ -102,8 +107,8 @@ table.msg_table {
 	overflow: hidden;
 	text-overflow: ellipsis; /* for IE */
 	-moz-text-overflow: ellipsis; /* for Firefox,mozilla */
-	line-height: 19px;
-	padding: 10px 15px;
+	line-height: 25px;
+	padding: 10px 5;
 	color: #666;
 	text-align: center;
 	white-space: nowrap;
@@ -112,7 +117,7 @@ table.msg_table {
 }
 
 .msg_table tr {
-	height: 40px;
+	height:55px;
 	overflow: hidden;
 	display: table-row;
 	vertical-align: inherit;
@@ -188,7 +193,7 @@ body {
 }
 
 .c-ul-applyList {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	width: 100%;
 	height: 100%;
 }
@@ -197,7 +202,7 @@ body {
 	float: left;
 	padding-top: 18px;
 	width: 280px;
-	height: 265px;
+	min-height: 265px;
 	border-left:10px solid #F3F3F3;
 	border-right:10px solid #F3F3F3;
 	background-color: white;
@@ -214,12 +219,15 @@ body {
 .c-ul-applyList li span {
 	display: inline-block;
 	float: left;
-	padding-left: 16px;
+	width:80px;
+	text-align:left;
+	padding-left: 10px;
 }
 
 .c-ul-applyList li font {
 	display: inline-block;
-	width: 100px;
+	width: 180px;
+	text-align:left;
 	height: 36px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -238,6 +246,8 @@ body {
 
 /*---------------------底部分页---------------------*/
 .c-div-paging {
+	width:100%;
+	margin:0 auto;
 	height: 80px;
 	line-height: 70px;
 	text-align: center;

@@ -31,7 +31,7 @@
 }
 
 .menubar-left {
-	height: 100%;
+	height: 80px;
 	width: 25%;
 	text-align: right;
 	float: left;
@@ -39,7 +39,7 @@
 /* 
 .menubar-left div  */
 .leftname {
-	height: 60%;
+	height: 48px;
 	width: 60%;
 	float: right;
 	text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .leftwww {
-	height: 40%;
+	height: 32px;
 	width: 60%;
 	float: right;
 	text-align: center;
@@ -63,57 +63,60 @@
 }
 
 .menubar-right {
-	height: 100%;
+	height: 80px;
 	width: 75%;
 	text-align: right;
-	float: left;
+	float: right;
 }
 
 .rightmenu {
-	height: 100%;
+	height: 80px;
 }
 
 .rightmenu li {
-	height: 100%;
+	height: 80px;
 	min-width: 140px;
 	float: right;
-	font-size: 24px;
 	text-align: center;
 	color: #ffffff;
+	/* padding:5px 1px; */
 }
 
 .rightmenu li a {
+	height:80px;
 	font-size: 18px;
 	text-align: center;
 	color: #ffffff;
 }
 
 .rightmenu li img {
+	padding-top:5px;
 	height: 35px;
 	width: 35px;
-	margin-top: 5px;
 }
 
 .rightmenu li p {
 	height: 40px;
-	width: 100%;
-	margin-top: -8px;
-	line-height: 45px;
+	/* width: 100%; */
+	width: 140px;
+	line-height: 40px;
 }
 
 .down-menu-item {
 	display: none;
+	z-index: 20000;
 }
 
 .down-menu-list {
 	height: 45px;
-	width: 100%;
+	/* width: 100%; */
+	width: 140px;
 	background-color: #EFEFEF;
-	z-index: 20000;
+	
 }
 
 .down-menu-list:HOVER {
-	background-color: #FFFFFF;
+	background-color: #DDDDDD;
 }
 </style>
 </head>
@@ -128,7 +131,7 @@
 		</div>
 		<div class="menubar-right">
 			<ul class="rightmenu">
-				<li style="background-color: #AE09FA"><a id="userA"
+				<li style="background-color: #AE09FA"><a id="userA" 
 					href="<%=menuBasePath%>client/partresumepublish.jsp"><img
 						alt="" src="<%=menuBasePath%>image/hellomy.png">
 						<p>赵承熙赵承熙</p></a>

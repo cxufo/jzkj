@@ -1,3 +1,9 @@
+@CHARSET "UTF-8";
+body{
+	text-align: center;/*设置内容居中，主要是兼容IE*/
+	
+}
+
 .resumeTop {
 	position: relative;
 	z-index: 200;
@@ -8,7 +14,7 @@
 	width: 920px;
 	min-height: 800px;
 	margin: 45px auto;
-	background-color: #FFFFFF;
+	background-color: #F3F3F3;
 }
 
 .centent-title {
@@ -89,7 +95,8 @@
 	font-size: 14px;
 	font-family: "宋体";
 	color: #555555;
-	padding-left: 10px;
+	/* padding-left: 10px; */
+	padding: auto 5px;
 }
 /*单选按钮*/
 .resumeRadio {

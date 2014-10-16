@@ -16,7 +16,7 @@
 <head>
 <base href="<%=BasePath%>">
 
-<title>我的工作</title>
+<title>我的工作-获得的工作</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -27,6 +27,8 @@
 	href="<%=BasePath%>css/zljresume.css">
 <link rel="stylesheet" type="text/css"
 	href="<%=BasePath%>css/zljmywork.css">
+<link rel="stylesheet" type="text/css"
+	href="<%=BasePath%>css/zljcommon.css">
 <script language="javascript" type="text/javascript"
 	src="<%=BasePath%>My97DatePicker/WdatePicker.js"></script>
 <%-- <link rel="stylesheet" type="text/css" href="<%=BasePath%>css/index.css"> --%>
@@ -48,69 +50,92 @@
 		<%-- <div class="centent-title">
 			<div class="centent-title-left"
 				style="background-image: url(<%=BasePath%>image/reg-title.png);">我的工作</div>
-			<div class="centent-title-right">推荐的工作</div>
+			<div class="centent-title-right">获得的工作</div>
 		</div> --%>
+		<div class="cententForm" style="width:100%;" name="b2">
+			<div id="js_msgSender" class="msg_sender"
+				style="background-color: #FFFFFF;">
+				<div class="msg_tab">
+					<div class="tab_panel">
+						<div style="border: 0px solid #E7E7EB;">
+							<table id="js_msg_table" class="msg_table"
+								style="width:100%;border-collapse:collapse;" border="0"
+								bordercolor="#a0c6e5">
+								<!-- <div
+									style="line-height:40px;height:40px;font-size: 25px;width:200px;text-align: left;padding-left:10px;">获得的工作:</div>
+								 -->
+								<tr style="background-color:#93D2F5 ">
+									<th style="width:8%;">编号</th>
+									<th style="width:30%;">标题</th>
+									<th style="width:15%;">职位类别</th>
+									<th style="width:12%;">薪酬</th>
+									<th style="width:35%;">工作地点</th>
+									<th style="width:15%;">报名时间</th>
+									<th style="width:15%;">操作</th>
+								</tr>
+								<%
+									for (int i = 0; i < 10; i++) {
+								%>
+								<tr>
+									<td><%=i + 1%></td>
+									<td>到花溪贵大派发传单</td>
+									<td>家教工/老师工</td>
+									<td>3000-6000</td>
+									<td>贵阳市南明区最空间B栋15楼贵阳市南明区最空间B栋15楼</td>
+									<td>2014-10-10</td>
+									<td><a href="#a1" name="editor">详情</a>/<a href="#b2"
+										name="deleter">取消</a></td>
+								</tr>
+								<%
+									}
+								%>
+							</table>
+							<script>
+								var oTab = document
+										.getElementById('js_msg_table');
+								var oDe = document.getElementsByName('input');
+								var oTr = document.getElementsByTagName('tr');
+								var oAE = document.getElementsByName('editor');
+								var oAD = document.getElementsByName('deleter');
+								for (var i = 1; i < oTr.length; i++) {
+									/*鼠标点击表格时背景变色*/
+									oTr[i].onclick = function() {
+										for (var i = 1; i < oTr.length; i++) {
+											oTr[i].style = "background-color:#ffffff";
+										}
+										this.style = "background-color:#F4F5F9";
+									}
+								}
 
-		<div class="cententForm" name="b2" id="huodedegongzuo"
-			style="/* border: 1px solid green; */">
-			<div class="c-div-apply">
-				<ul class="c-ul-applyList">
-					<li class="c-li-singular"><span>标题：</span> <font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span> <font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a id="a1"
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-					<li class="c-li-singular"><span>标题：</span> <font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span> <font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a id="a1"
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-					<li class="c-li-singular"><span>标题：</span> <font>到花溪贵大派发传单</font><br>
-						<span>兼职类型：</span> <font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a id="a1"
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-					<li><span>标题：</span> <font>到花溪贵大派发传单</font><br> <span>兼职类型：</span>
-						<font>派发传单</font><br> <span>工作时间：</span> <font>星期一、星期二</font><br>
-						<span>工作地点：</span> <font>贵阳花溪</font><br> <span>人数：</span> <font>5</font><br>
-						<span>资薪：</span> <font>100元/每天</font><br> <a
-						href="javascript:;">查看详情</a></li>
-				</ul>
-				<!-- 分页 -->
-				<div class="c-div-paging">
-					<a href="javascript:;">上一页</a> <a href="javascript:;"
-						class="paging-active">1</a> <a href="javascript:;">2</a> <a
-						href="javascript:;">3</a> <a href="javascript:;">4</a> <a
-						style="border-style: none; ">······</a> <a href="javascript:;">下一页</a>
+								for (var i = 0; i < oAD.length; i++) {
+									/*点击标签删除当前行*/
+									oAD[i].onclick = function() {
+										if (confirm("确认要删除吗！")) {
+											/* this.parentNode.parentNode.style = "background-color:red;"; */
+											oTab.tBodies[0]
+													.removeChild(this.parentNode.parentNode);
+										}
+									}
+								}
+							</script>
+						</div>
+					</div>
 				</div>
-			</div>
+				<div class="c-div-paging">
+					<a href="javascript:;">上一页</a>
+					<a href="javascript:;">1</a>
+					<!-- <label style="height:42px;width:90px;background-color:#949494 ;border:1px siolid   #D4D4D4;line-height:42px;font-size:18px;text-align:center;margin: 0 10px 0 20px; value=" 0"></label>
+					<input
+						style="height:42px;width:90px;background-color:#949494 ;border:1px siolid   #D4D4D4;line-height:42px;font-size:18px;text-align:center;margin: 0 10px 0 20px; value=" 0"/>
+					 --><a href="javascript:;">下一页</a>
+				</div>
 
+			</div>
 		</div>
+
+
+		<!--  -->
+
 
 	</div>
 
