@@ -38,17 +38,21 @@
 
 	<div class="resumeTop"><%@include file="personalmenubar.jsp"%></div>
 	<div class="contentBody">
-		<div class="centent-title">
+		<%-- <div class="centent-title">
 			<div class="centent-title-left"
 				style="background-image: url(<%=BasePath%>image/reg-title.png);">发布简历</div>
 			<div class="centent-title-right">全职简历</div>
-		</div> 
+		</div>  --%>
 		<div class="cententForm">
 			<form action="">
 				<table>
+					<tr style="border-bottom: 1px solid #DDDDDD;margin-left:100px;">
+						<td style="text-align: left;">全职简历发布:</td>
+						<td></td>
+					</tr>
 					<tr class="contentTR">
 						<td>姓名:</td>
-						<td><input class="resumeText" type="text" 
+						<td><input class="resumeText" type="text"
 							name="partResumeName" /></td>
 					</tr>
 					<tr>
@@ -60,7 +64,7 @@
 					</tr>
 					<tr>
 						<td>出生日期:</td>
-						<td><input class="resumeText" type="text" name="partResume" 
+						<td><input class="resumeText" type="text" name="partResume"
 							id="creattimeid" value="" onclick="WdatePicker()" /></td>
 					</tr>
 					<tr>
@@ -144,15 +148,13 @@
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro">自我简绍:</td>
 						<td><textarea style="width: 352px; height: 87px;"
-								name="resumeSelfIntroduction" id="resumeSelfIntroduction" cols="45" rows="8"
-								class="resumeTextarea"></textarea></td>
-					</tr>
-					<tr id="resumeMyIntroForm">
-						<td id="resumeMyIntro"></td>
-						<td><input id="comBtn" type="submit" value="发布"
-							class="resumeBtn" /></td>
+								name="resumeSelfIntroduction" id="resumeSelfIntroduction"
+								cols="45" rows="8" class="resumeTextarea"></textarea></td>
 					</tr>
 				</table>
+				<div class="zlj-myInfor-sub-div">
+					<input id="comBtn" type="submit" value="修改" class="resumeBtn" />
+				</div>
 			</form>
 		</div>
 	</div>

@@ -45,7 +45,7 @@
 	text-align: center;
 	line-height: 40px;
 	font-size: 30px;
-	font-family:"宋体";
+	font-family: "宋体";
 	color: #FFFFFF;
 	padding-top: 5px;
 }
@@ -58,7 +58,7 @@
 	line-height: 30px;
 	color: #FFFFFF;
 	font-size: 18px;
-	font-family:"宋体";
+	font-family: "宋体";
 	margin-top: -8px;
 }
 
@@ -83,14 +83,14 @@
 }
 
 .rightmenu li a {
-	height:80px;
+	height: 80px;
 	font-size: 18px;
 	text-align: center;
 	color: #ffffff;
 }
 
 .rightmenu li img {
-	padding-top:5px;
+	padding-top: 5px;
 	height: 35px;
 	width: 35px;
 }
@@ -112,7 +112,6 @@
 	/* width: 100%; */
 	width: 140px;
 	background-color: #EFEFEF;
-	
 }
 
 .down-menu-list:HOVER {
@@ -131,18 +130,25 @@
 		</div>
 		<div class="menubar-right">
 			<ul class="rightmenu">
-				<li style="background-color: #AE09FA"><a id="userA" 
-					href="<%=menuBasePath%>client/partresumepublish.jsp"><img
-						alt="" src="<%=menuBasePath%>image/hellomy.png">
+				<li style="background-color: #AE09FA"><a id="userA"
+					href="<%=menuBasePath%>client/myinformation.jsp"><img alt=""
+						src="<%=menuBasePath%>image/hellomy.png">
 						<p>赵承熙赵承熙</p></a>
 					<div id="userL" class="down-menu-item">
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
+								href="<%=menuBasePath%>client/myinformationedit.jsp">信息修改</a>
+						</div>
+						<div class="down-menu-list">
+							<a
+								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
 								href="<%=menuBasePath%>client/login.jsp">退出登录</a>
 						</div>
+
 					</div></li>
-				<li style="background-color: #FAAE09"><a id="workA" href="<%=menuBasePath%>client/theregistrationwork.jsp"><img
+				<li style="background-color: #FAAE09"><a id="workA"
+					href="<%=menuBasePath%>client/theregistrationwork.jsp"><img
 						alt="" src="<%=menuBasePath%>image/mywork.png">
 						<p>我的工作</p></a>
 					<div id="workL" class="down-menu-item">
@@ -164,7 +170,12 @@
 						<div class="down-menu-list">
 							<a
 								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
-								href="<%=menuBasePath%>#">我的评价</a>
+								href="<%=menuBasePath%>client/thenoevaluation.jsp">待评价</a>
+						</div>
+						<div class="down-menu-list">
+							<a
+								style="font-size: 18px; line-height:45px;text-align: center; color: #AFAFAF;"
+								href="<%=menuBasePath%>client/themyevaluation.jsp">我的评价</a>
 						</div>
 					</div></li>
 				<li style="background-color: #93D2F5"><a id="editA"
@@ -184,8 +195,8 @@
 						</div>
 					</div></li>
 				<li style="background-color: #80F91E"><a id="fabuA"
-					href="<%=menuBasePath%>client/partresumepublish.jsp"><img alt=""
-						src="<%=menuBasePath%>image/fabujianli.png">
+					href="<%=menuBasePath%>client/partresumepublish.jsp"><img
+						alt="" src="<%=menuBasePath%>image/fabujianli.png">
 						<p>发布简历</p></a>
 					<div id="fabuL" class="down-menu-item" style="z-index: 2000;">
 						<div class="down-menu-list">

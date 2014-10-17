@@ -32,14 +32,9 @@
 </head>
 
 <body style="background-color: #F3F3F3;">
-
+	<!-- 引用头部 -->
 	<div class="resumeTop"><%@include file="personalmenubar.jsp"%></div>
 	<div class="contentBody">
-		<%-- <div class="centent-title">
-			<div class="centent-title-left"
-				style="background-image: url(<%=BasePath%>image/reg-title.png);">我的工作</div>
-			<div class="centent-title-right">报名的工作</div>
-		</div> --%>
 		<div class="cententForm" style="width:100%;" name="a1">
 			<div id="js_msgSender" class="msg_sender"
 				style="background-color: #FFFFFF;">
@@ -49,6 +44,14 @@
 							<table id="js_msg_table" class="msg_table"
 								style="width:100%;border-collapse:collapse;" border="0"
 								bordercolor="#a0c6e5">
+								<tr
+									style="margin-left:100px;background-color: #F3F3F3;font-size: 20px;border-bottom: 1px solid #000000;">
+									<td style="text-align: left;">报名的工作:</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
 								<tr style="background-color:#93D2F5 ">
 									<th style="width:10%;">编号</th>
 									<th style="width:30%;">标题</th>
@@ -118,12 +121,8 @@
 				</div>
 
 				<div class="c-div-paging">
-					<a href="javascript:;">上一页</a>
-					<a href="javascript:;">1</a>
-					<!-- <label style="height:42px;width:90px;background-color:#949494 ;border:1px siolid   #D4D4D4;line-height:42px;font-size:18px;text-align:center;margin: 0 10px 0 20px; value=" 0"></label>
-					<input
-						style="height:42px;width:90px;background-color:#949494 ;border:1px siolid   #D4D4D4;line-height:42px;font-size:18px;text-align:center;margin: 0 10px 0 20px; value=" 0"/>
-					 --><a href="javascript:;">下一页</a>
+					<a href="javascript:;">上一页</a> <a href="javascript:;">1</a> <a
+						href="javascript:;">下一页</a>
 				</div>
 			</div>
 		</div>

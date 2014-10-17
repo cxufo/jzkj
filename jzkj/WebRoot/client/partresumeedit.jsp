@@ -38,17 +38,21 @@
 
 	<div class="resumeTop"><%@include file="personalmenubar.jsp"%></div>
 	<div class="contentBody">
-		<div class="centent-title">
+		<%-- <div class="centent-title">
 			<div class="centent-title-left"
 				style="background-image: url(<%=BasePath%>image/reg-title.png);">修改简历</div>
 			<div class="centent-title-right">兼职简历</div>
-		</div> 
+		</div> --%>
 		<div class="cententForm">
 			<form action="">
 				<table>
+					<tr style="border-bottom: 1px solid #DDDDDD;margin-left:100px;">
+						<td style="text-align: left;">兼职简历编辑:</td>
+						<td></td>
+					</tr>
 					<tr class="contentTR">
 						<td>姓名:</td>
-						<td><input class="resumeText" type="text" 
+						<td><input class="resumeText" type="text"
 							name="partResumeName" /></td>
 					</tr>
 					<tr>
@@ -66,7 +70,7 @@
 					<tr>
 						<td>学历:</td>
 						<td><select name="resumeEducation">
-						<option value="undergraduate" selected="selected">本科</option>
+								<option value="undergraduate" selected="selected">本科</option>
 								<option value="heightSchool">高中</option>
 								<option value="specialty">专科</option>
 								<option value="master">硕士</option>
@@ -82,7 +86,7 @@
 					<tr>
 						<td>职位类别:</td>
 						<td><select name="resumePosition">
-						<option value="lj" selected="selected">老师/家教</option>
+								<option value="lj" selected="selected">老师/家教</option>
 								<option value="cd">促销/导购</option>
 								<option value="cj">传单/举牌</option>
 								<option value="sx">市调/宣传</option>
@@ -105,7 +109,7 @@
 								<option value="10to50">10-50</option>
 								<option value="50to70" selected="selected">50-70</option>
 								<option value="80to100">80-100</option>
-								<option value="100to200" >100-200</option>
+								<option value="100to200">100-200</option>
 								<option value="200to500">200-500</option>
 								<option value="500to1000">500-1000</option>
 								<option value="1000to">1000以上</option>
@@ -115,13 +119,12 @@
 						<td>期望工作地点:</td>
 						<td>贵阳市-<select name="resumeExpectPlaceOfwork">
 								<option value="volvo">花溪区</option>
-								<option value="saab">南明区</option>
+								<option value="saab" selected="selected">南明区</option>
 								<option value="saab">云岩区</option>
 								<option value="fiat">白云区</option>
 								<option value="audi">小河区</option>
 								<option value="audi">乌当区</option>
 								<option value="volvo">观山湖区</option>
-								<option value="audi" selected="selected">白云区</option>
 								<option value="saab">息烽县</option>
 								<option value="saab">修文县</option>
 								<option value="fiat">开阳县</option>
@@ -144,15 +147,13 @@
 					<tr id="resumeMyIntroForm">
 						<td id="resumeMyIntro">自我简绍:</td>
 						<td><textarea style="width: 352px; height: 87px;"
-								name="resumeSelfIntroduction" id="resumeSelfIntroduction" cols="45" rows="8"
-								class="resumeTextarea"></textarea></td>
-					</tr>
-					<tr id="resumeMyIntroForm">
-						<td id="resumeMyIntro"></td>
-						<td><input id="comBtn" type="submit" value="修改"
-							class="resumeBtn" /></td>
+								name="resumeSelfIntroduction" id="resumeSelfIntroduction"
+								cols="45" rows="8" class="resumeTextarea"></textarea></td>
 					</tr>
 				</table>
+				<div class="zlj-myInfor-sub-div">
+					<input id="comBtn" type="submit" value="修改" class="resumeBtn" />
+				</div>
 			</form>
 		</div>
 	</div>

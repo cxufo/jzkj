@@ -16,7 +16,7 @@
 <head>
 <base href="<%=BasePath%>">
 
-<title>我的工作-获得的工作</title>
+<title>我的工作-我的评价</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -26,33 +26,16 @@
 <link rel="stylesheet" type="text/css"
 	href="<%=BasePath%>css/zljresume.css">
 <link rel="stylesheet" type="text/css"
-	href="<%=BasePath%>css/zljmywork.css">
-<link rel="stylesheet" type="text/css"
-	href="<%=BasePath%>css/zljcommon.css">
+	href="<%=BasePath%>css/zlj-my-evalution.css">
 <script language="javascript" type="text/javascript"
 	src="<%=BasePath%>My97DatePicker/WdatePicker.js"></script>
-<%-- <link rel="stylesheet" type="text/css" href="<%=BasePath%>css/index.css"> --%>
-
-<script type="text/javascript" src="<%=BasePath%>js/index.js"></script>
-<style type="text/css">
-.c-ul-applyList ui li font {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-</style>
 </head>
 
 <body style="background-color: #F3F3F3;">
 
 	<div class="resumeTop"><%@include file="personalmenubar.jsp"%></div>
 	<div class="contentBody">
-		<%-- <div class="centent-title">
-			<div class="centent-title-left"
-				style="background-image: url(<%=BasePath%>image/reg-title.png);">我的工作</div>
-			<div class="centent-title-right">获得的工作</div>
-		</div> --%>
-		<div class="cententForm" style="width:100%;" name="b2">
+		<div class="cententForm" style="width:100%;" name="a1">
 			<div id="js_msgSender" class="msg_sender"
 				style="background-color: #FFFFFF;">
 				<div class="msg_tab">
@@ -73,25 +56,49 @@
 								</tr>
 								<tr style="background-color:#93D2F5 ">
 									<th style="width:8%;">编号</th>
-									<th style="width:30%;">标题</th>
-									<th style="width:15%;">职位类别</th>
-									<th style="width:12%;">薪酬</th>
-									<th style="width:35%;">工作地点</th>
-									<th style="width:15%;">报名时间</th>
-									<th style="width:15%;">操作</th>
+									<th style="width:15%;">企业名称</th>
+									<th style="width:20%;">标题</th>
+									<th style="width:10%;">报名时间</th>
+									<th style="width:7%;">评分</th>
+									<th style="width:30%;">内容</th>
+									<th style="width:10%;">操作</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>贵州ET电子商务公司</td>
+									<td>到花溪贵大派发传单</td>
+									<td>2014-10-14</td>
+									<td>4星</td>
+									<td>好哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈好好好哈哈哈哈哦啊好哦啊好</td>
+									<td><a class="xiangqing" href="javascript:;" name="editor">详情</a></td>
 								</tr>
 								<%
-									for (int i = 0; i < 10; i++) {
+									for (int i = 0; i < 5; i++) {
 								%>
 								<tr>
-									<td><%=i + 1%></td>
+									<td><%=i + 2%></td>
+									<td>贵州ET电子商务公司</td>
 									<td>到花溪贵大派发传单</td>
-									<td>家教工/老师工</td>
-									<td>3000-6000</td>
-									<td>贵阳市南明区最空间B栋15楼贵阳市南明区最空间B栋15楼</td>
-									<td>2014-10-10</td>
-									<td><a href="#a1" name="editor">详情</a>/<a href="#b2"
-										name="deleter">取消</a></td>
+									<td>2014-10-14</td>
+									<td>4星</td>
+									<td>好哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈好好好哈哈哈哈哦啊好哦啊好</td>
+									<td><a class="xiangqing" href="javascript:;" name="editor">详情</a></td>
+								</tr>
+								<%
+									}
+								%>
+								<%
+									for (int i = 0; i < 5; i++) {
+								%>
+								<tr>
+									<td><%=i + 6%></td>
+									<td>-</td>
+									<td>-</td>
+									<td>-</td>
+									<td>-</td>
+									<td>-</td>
+									<td>-<!-- <a href="#a1" name="editor">详情</a>/<a href="#b2"
+										name="deleter">取消</a> --></td>
 								</tr>
 								<%
 									}
@@ -128,6 +135,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="c-div-paging">
 					<a href="javascript:;">上一页</a> <a href="javascript:;">1</a>
 					<!-- <label style="height:42px;width:90px;background-color:#949494 ;border:1px siolid   #D4D4D4;line-height:42px;font-size:18px;text-align:center;margin: 0 10px 0 20px; value=" 0"></label>
@@ -136,13 +144,8 @@
 					 -->
 					<a href="javascript:;">下一页</a>
 				</div>
-
 			</div>
 		</div>
-
-
-		<!--  -->
-
 
 	</div>
 
