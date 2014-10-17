@@ -1,0 +1,93 @@
+.jz-menubar {
+	width: 100%;
+	height: 80px;
+	background-color: #696969;
+}
+.menubar-left {
+	height: 80px;
+	width: 25%;
+	text-align: right;
+	float: left;
+}
+
+.leftname {
+	height: 48px;
+	width: 60%;
+	float: right;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	font-family:"宋体";
+	color: #FFFFFF;
+	padding-top: 5px;
+}
+
+.leftwww {
+	height: 32px;
+	width: 60%;
+	float: right;
+	text-align: center;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family:"宋体";
+	margin-top: -8px;
+}
+
+/*----------------右侧导航-----------------*/
+.menubar-right {
+	height: 80px;
+	width: 75%;
+	text-align: right;
+	float: left;
+}
+
+.rightmenu {
+	height: 80px;
+}
+
+.rightmenu li {
+	display: inline-block;
+	height: 80px;
+	min-width: 140px;
+	_width:expression((documentElement.clientWidth < 140) ? "140px" : "auto" );
+	float: right;
+	font-size: 24px;
+	text-align: center;
+	color: #ffffff;
+	white-space:nowrap;
+}
+
+.rightmenu li a {
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.rightmenu li img {
+	height: 35px;
+	width: 35px;
+	margin-top: 5px;
+}
+
+.rightmenu li p {
+	height: 40px;
+	width: 100%;
+	padding-top: 5px;
+	line-height: 35px;
+}
+
+.down-menu-item {
+	display: none;
+}
+
+.down-menu-list {
+	height: 45px;
+	width: 100%;
+	background-color: #EFEFEF;
+}
+
+.down-menu-list:HOVER {
+	background-color: #FFFFFF;
+}

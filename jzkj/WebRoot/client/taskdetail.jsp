@@ -40,8 +40,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<!-- 当前位置 -->
 			<div class = "c-div-currentLocation">
 				<a>当前位置</a> >>
-				<a href="javascript:;">兼职招聘</a> >>
-				<a href="javascript:;">兼职详情</a>
+				<a href="<%=basePath%>index.jsp">兼职招聘</a> >>
+				<a>兼职详情</a>
 			</div>
 			
 			<!-- 报名 -->
@@ -56,47 +56,49 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<div class = "c-div-detailsContent"> <!-- 岗位基本信息  具体内容 -->
 				
-					<div style = "display: inline-block;">	<!-- 左上侧信息 -->
-						<span>招聘单位:</span>
-						<font>阿里巴巴集团</font><br>
-						<span>招聘职位:</span>
-						<font>程序员</font><br>
-						<span>可预约人数:</span>
-						<font>30人</font><br>
-						<span>性别:</span>
-						<font>女</font><br>
-						<span>资薪:</span>
-						<font>6000元/月</font><br>
-						<span>面试时间:</span>
-						<font>2015-5-30</font><br>
-						<span>工作时间:</span>
-						<font>星期一至星期五</font><br>
-					</div>
-					
-					<div style = "float:right;padding-right: 136px;">	<!-- 右上侧信息 -->
-						<span>兼职类别:</span>
-						<font>实习生</font><br>
-						<span>招聘人数:</span>
-						<font>20人</font><br>
-						<span>学历:</span>
-						<font>本科</font><br>
-						<span>年龄:</span>
-						<font>20-26</font><br>
-						<span>是否收费:</span>
-						<font>否</font><br>
-						<span>标签:</span>
-						<font>全职</font><br> 
+					<div style = "width:100%;height:392px;">
+						<div style = "display: inline-block;float: left;">	<!-- 左上侧信息 -->
+							<span>招聘单位:</span>
+							<span>阿里巴巴集团</span><br>
+							<span>招聘职位:</span>
+							<span>程序员</span><br>
+							<span>可预约人数:</span>
+							<span>30人</span><br>
+							<span>性别:</span>
+							<span>女</span><br>
+							<span>资薪:</span>
+							<span>6000元/月</span><br>
+							<span>面试时间:</span>
+							<span>2015-5-30</span><br>
+							<span>工作时间:</span>
+							<span>星期一至星期五</span><br>
+						</div>
+						
+						<div style = "float:right;margin-right: 136px;">	<!-- 右上侧信息 -->
+							<span>兼职类别:</span>
+							<span>实习生</span><br>
+							<span>招聘人数:</span>
+							<span>20人</span><br>
+							<span>学历:</span>
+							<span>本科</span><br>
+							<span>年龄:</span>
+							<span>20-26</span><br>
+							<span>是否收费:</span>
+							<span>否</span><br>
+							<span>标签:</span>
+							<span>全职</span><br> 
+						</div>
 					</div>
 					
 					<div>	<!-- 下侧信息 -->
 						<span>面试地点:</span>
-						<font>花溪公园</font><br>
+						<span>花溪公园</span><br>
 						<span style = "display: inline-block;float:left;">职位描述:</span>
-						<div style = "margin: 4px 0px 30px 90px;line-height: 48px;">
-							<font>精通C++、C语言，了解分布式数据库原理，了解云计算
+						<div style = "margin: 4px 0px 30px 98px;line-height: 48px;">
+							<span>精通C++、C语言，了解分布式数据库原理，了解云计算
 							基本原理。吃苦耐劳，有称为一名屌丝程序员的终极梦想，能加班，
 							无怨言，必须有作为一名宅男的基本素质，心中的女神最好是老干妈。
-							</font>
+							</span>
 						</div>
 					</div>
 					

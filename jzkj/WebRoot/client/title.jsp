@@ -23,7 +23,7 @@ String titleBasePath = request.getScheme()+"://"+request.getServerName()+":"+req
 
   </head>
   
-  <body>
+  <body style = "text-align: center;">
   	
   	<!-- 顶部logo 及搜索条 -->
     <div class = "c-div-header">

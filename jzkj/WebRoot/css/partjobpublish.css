@@ -1,6 +1,7 @@
 body
 {
 	background-color: #F3F3F3;
+	text-align: center;
 }
 
 .c-div-body
@@ -81,6 +82,7 @@ body
 {
 	width: 238px;
 	height: 34px;
+	line-height: 34px;
 	border: 1px solid #CCC;
 	font-size: 14px;
 	font-family: arial, "宋体";

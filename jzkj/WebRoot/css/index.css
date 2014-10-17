@@ -167,6 +167,10 @@ body
 	background-color: #2ED4F2;
 }
 
+.c-ul-applyList li a:HOVER
+{
+	color: white;
+}
 
 
 /*---------------------底部分页---------------------*/

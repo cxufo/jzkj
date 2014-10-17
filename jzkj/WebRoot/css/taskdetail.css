@@ -1,6 +1,7 @@
 body
 {
 	background-color: #F3F3F3;
+	text-align: center;
 }
 
 .c-div-body
@@ -16,6 +17,7 @@ body
 {
 	width: 920px;
 	margin: 0 auto;
+	text-align: left;
 }
 
 .c-div-currentLocation /*当前位置*/
@@ -40,8 +42,9 @@ body
 .c-div-signUp a
 {
 	display: inline-block;
+	float: left;
 	width: 246px;
-	height: 100%;
+	height: 52px;
 	line-height: 52px;
 	text-align: center;
 	color: #757373;
@@ -52,7 +55,7 @@ body
 {
 	display: inline-block;
 	width: 674px;
-	height: 100%;
+	height: 52px;
 	line-height: 52px;
 	text-align: center;
 	float: right;
