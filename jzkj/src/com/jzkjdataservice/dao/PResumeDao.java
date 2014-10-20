@@ -54,6 +54,8 @@ public class PResumeDao extends DBoperator<PResume>{
 					p.setPtjType(presume.getPtjType());
 				if (null!= presume.getWorkPlace())
 					p.setWorkPlace(presume.getWorkPlace());
+				if (null!= presume.getWorkTime())
+					p.setWorkTime(presume.getWorkTime());
 				if (null!=presume.getWage())
 					p.setWage(presume.getWage());
 				if (null!=presume.getEducation())

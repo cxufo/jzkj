@@ -10,6 +10,7 @@
       <property name="birthday" column="birthday" type="string"></property>
       <property name="ptjType" column="ptjType" type="string"></property>
       <property name="workPlace" column="workPlace" type="string"></property>
+      <property name="workTime" column="workTime" type="string"></property>
       <property name="wage" column="wage" type="string"></property>
        <property name="education" column="education" type="string"></property>
       <property name="introduction" column="introduction" type="string"></property>

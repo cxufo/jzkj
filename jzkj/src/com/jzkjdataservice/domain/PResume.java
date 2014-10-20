@@ -8,6 +8,7 @@ public class PResume {
 	private String birthday;
 	private String ptjType;
 	private String workPlace;
+	private String workTime;
 	private String wage;
 	private String education;
 	private String introduction;
@@ -99,6 +100,15 @@ public class PResume {
 
 	public void setLocation(String location) {
 		this.location = location;
+	}
+
+	
+	public String getWorkTime() {
+		return workTime;
+	}
+
+	public void setWorkTime(String workTime) {
+		this.workTime = workTime;
 	}
 
 	@Override
