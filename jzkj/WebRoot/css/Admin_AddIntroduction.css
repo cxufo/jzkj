@@ -1,0 +1,185 @@
+/*该css样式主要是为增加简介表的右边部分提供样式*/
+/**/
+.msg_sender {
+	margin: 20px 30px;
+	height: 106%;
+	/* border: 1px solid #E7E7EB; */
+	border: 1px solid #FFFFFF;
+}
+
+.msg_sender .tab_panel {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	/*原background-color:#E7E7EB;*/
+	background-color: #FFFFFF;
+	min-height: 216px;
+	width: 100%;
+}
+
+.text_input {
+	height: 40px;
+	/* width: 278px; */
+	padding: 6px 0px;
+	border-bottom: 1px solid #CCCCCC;
+	border: 1px solid #E7E7EB;
+	box-shadow: none;
+	border-radius: 5px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+
+.msg_name {
+	/*输入框前的名称宽度设置*/
+	padding-left: 30px;
+	min-height: 40px;
+	min_width: 200px;
+	font-size: 24px;
+	width: 150px;
+	text-align: left;
+	display: inline-block;
+}
+
+.msg_input {
+	/*信息输入框input设置*/
+	width: 600px;
+	line-height: 30px;
+	font-size: 23px;
+	padding-left: 10px; /*这里的值可以改变光标的位置*/
+	border: 1px solid #E7E7EB;
+	outline: 0px none;
+}
+
+.text_ueditor {
+	border: 0 none;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+
+.text_sub {
+	padding: 10px 0 10px 500px;
+	background-color: #FFF;
+	/* 	margin-top: 20px;
+ */
+}
+
+.text_edit_area {
+	/* ueditorcss设置 */
+	
+}
+
+/* table tr td{height:40px} */
+/*右边部输出表格样式设置*/
+body,table {
+	font-size: 14px;
+}
+
+/* table {
+	table-layout: fixed;
+	empty-cells: show;
+	border-collapse: collapse;
+	margin: 0 auto;
+} */
+
+/* td {
+	height: 40px;
+	overflow: hidden;
+} */
+
+/* h1,h2,h3 {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+} */
+table.msg_table {
+	table-layout: fixed;
+	border: 1px solid #cad9ea;
+	color: #666;
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+	bordercolor: #a0c6e5;
+}
+
+.msg_table th {
+	background-repeat: repeat-x;
+	border: 1px solid #cad9ea;
+	padding: 0 1em 0;
+	height: 40px;
+	overflow: hidden;
+}
+
+.msg_table td {
+	border: 1px solid #cad9ea;
+	padding: 0 1em 0;
+	/* maxlength:12;
+	size:12; */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /* for IE */
+	-moz-text-overflow: ellipsis; /* for Firefox,mozilla */
+}
+
+.msg_table tr {
+	height: 40px;
+	overflow: hidden;
+}
+
+/* td:after {
+	content: "...";
+	padding-left: 3px;
+	font-size: 12px;
+} */
+/* .msg_table tr.alter {
+	background-color: #f5fafe;
+} */
+/***/
+.btn_delete {
+	/*删除按钮样式*/
+	background-color: #F4F5F9;
+	padding: 0;
+	border: 0;
+	height: 39px;
+	color: #459AE9;
+	font-size: 14px;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei",
+		"微软雅黑", "黑体", Arial, sans-serif;
+}
+
+.btn_edit {
+	/*编辑按钮样式*/
+	background-color: #F4F5F9;
+	padding: 0;
+	border: 0;
+	height: 39px;
+	color: #459AE9;
+	font-size: 14px;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei",
+		"微软雅黑", "黑体", Arial, sans-serif;
+}
+/*提交控件样式*/
+.input-file {
+	display: inline-block;
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	background-color: #00a1cb;
+	color: #fafafa;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 1px;
+	transition: background .3s;
+	-webkit-transition: background .3s
+} /*自定义外框样式*/
+.input-file:hover {
+	background-color: #00b5e5
+} /*鼠标经过样式*/
+.input-file input {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+	right: 0
+} /*隐藏默认控件样式*/
