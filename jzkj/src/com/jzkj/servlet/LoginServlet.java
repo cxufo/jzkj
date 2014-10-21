@@ -143,6 +143,7 @@ public class LoginServlet extends HttpServlet {
 					HttpSession session = request.getSession();
 					session.setAttribute("userLevel", level);
 					session.setAttribute("userRole", role);
+					session.setAttribute("username", username);
 					// --------------------------------------------------------
 					if (isSavePassword != null)
 						request.setAttribute("isSavePassword", isSavePassword);
@@ -186,7 +187,7 @@ public class LoginServlet extends HttpServlet {
 					HttpSession session = request.getSession();
 					session.setAttribute("userLevel", level);
 					session.setAttribute("userRole", role);
-
+					session.setAttribute("username", username);
 					if (isSavePassword != null)
 						request.setAttribute("isSavePassword", isSavePassword);
 					if (isSavePassword.equals("yes")) {
