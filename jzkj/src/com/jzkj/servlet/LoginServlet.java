@@ -2,6 +2,7 @@ package com.jzkj.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLDecoder;
 
 import javax.jms.Session;
 import javax.servlet.ServletException;
@@ -48,14 +49,13 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		// Cookie
-		Cookie cookies[] = request.getCookies();
-		System.out.println("cookies长度"+cookies.length);
+		Cookie cookies[] = request.getCookies();		
 		String username = null;
 		String password = null;
 		String role = null;
 		String isSavePassword = null;
 
-		if (cookies.length>0) {
+		if (cookies!=null) {
 			for (int i = 0; i < cookies.length; i++) {
 				String name = cookies[i].getName();
 				if (null != cookies[i].getValue()) {
@@ -87,6 +87,7 @@ public class LoginServlet extends HttpServlet {
 			request.setAttribute("isSavePassword", isSavePassword);
 			System.out.println("doget 设置用户名密码");
 		}
+		
 		request.getRequestDispatcher("client/login.jsp").forward(request,
 				response);
 	}

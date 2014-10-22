@@ -2,11 +2,9 @@ package com.jzkjdataservice.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import com.jzkjdataservice.db.DBoperator;
 import com.jzkjdataservice.domain.FJob;
 import com.jzkjdataservice.domain.PJob;

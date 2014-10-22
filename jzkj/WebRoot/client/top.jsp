@@ -38,7 +38,7 @@
 			<div class="jz-topbar-right">
 				<span><a href="client/login.jsp">登录</a></span>
 				<span><a href="client/personalregister.jsp">注册</a></span>
-				<span><a href="client/partresumepublish.jsp">用户中心</a></span>
+				<span><a href="userCenter">用户中心</a></span>
 			</div>
 		</div>
 	</div>

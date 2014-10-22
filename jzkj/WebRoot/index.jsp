@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -19,7 +20,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="<%=basePath%>css/index.css">
 	
 	<script type="text/javascript" src="<%=basePath%>js/index.js"></script>
-	
 	
   </head>
   
@@ -45,22 +45,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class = "c-div-listTitle">兼职分类
 						</div>
 						<div class = "c-div-listDetail">
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
-							<a href="javascript:;">学生兼职</a>&nbsp;&nbsp;
+						<c:forEach items="${requestScope.jobTypelist}" var="jobTypeList">
+							<a href="javascript:;"><c:out value="${jobTypeList.jobType}"/></a>&nbsp;&nbsp;
+					    </c:forEach>
 						</div>
 					</div>
 					<div class = "c-div-partTimeList">
 						<div class = "c-div-listTitle">兼职区域
 						</div>
 						<div class = "c-div-listDetail">
-							<a href="javascript:;">南明</a>&nbsp;&nbsp;
-							<a href="javascript:;">云岩</a>&nbsp;&nbsp;
-							<a href="javascript:;">小河</a>&nbsp;&nbsp;
-							<a href="javascript:;">花溪</a>&nbsp;&nbsp;
+						<c:forEach items="${requestScope.areaList}" var="areaList">
+							<a href="javascript:;"><c:out value="${areaList.area}"/></a>&nbsp;&nbsp;
+						</c:forEach>
 						</div>
 					</div>
 					<div class = "c-div-partTimeList">
@@ -77,7 +73,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class = "c-div-listTitle">兼职标签
 						</div>
 						<div class = "c-div-listDetail">
-							<a href="javascript:;">全职</a>&nbsp;&nbsp;
+							<a href="javascript:;">长期</a>&nbsp;&nbsp;
 							<a href="javascript:;">日职</a>&nbsp;&nbsp;
 						</div>
 					</div>
@@ -85,87 +81,61 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 			</div>
 			
-			
-			
 			<!-- 我要报名 -->
 			<div class = "c-div-apply">
 				<ul class = "c-ul-applyList">
+				    <c:forEach items="${requestScope.pjoblist}" var="pjoblist" varStatus="status">
+
+				    <c:choose>
+				    <c:when test="${status.index%2==0}">
 					<li class = "c-li-leftApply">
 						<span>标题：</span>
-						<font>小学作文老师</font><br>
+						<font><c:out value="${pjoblist.jobTitle}"/></font><br>
 						<span>兼职类型：</span>
-						<font>普通兼职</font><br>
+						<font><c:out value="${pjoblist.ptjType}"/></font><br>
 						<span>工作时间：</span>
-						<font>2014-10-14至2014-11-14 8:30至17:30</font><br>
+						<font><c:out value="${pjoblist.workTime}"/></font><br>
 						<span>工作地点：</span>
-						<font>贵阳云岩区普陀路凯旋门大厦A座21楼3号</font><br>
+						<font><c:out value="${pjoblist.workPlace}"/></font><br>
 						<span>人数：</span>
-						<font>3人</font><br>
+						<font><c:out value="${pjoblist.rCount}"/></font><br>
 						<span>资薪：</span>
-						<font>100元/次</font><br>
+						<font><c:out value="${pjoblist.wage}"/></font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
-					
-					<li>
+					</c:when>
+					<c:otherwise>
+					   <li>
 						<span>标题：</span>
-						<font>招钢琴教师和钢琴陪练</font><br>
+						<font><c:out value="${pjoblist.jobTitle}"/></font><br>
 						<span>兼职类型：</span>
-						<font>普通兼职</font><br>
+						<font><c:out value="${pjoblist.ptjType}"/></font><br>
 						<span>工作时间：</span>
-						<font>2014-10-14至2014-11-14 8:30至17:30</font><br>
+						<font><c:out value="${pjoblist.workTime}"/></font><br>
 						<span>工作地点：</span>
-						<font>白云区大山洞白云中路</font><br>
+						<font><c:out value="${pjoblist.workPlace}"/></font><br>
 						<span>人数：</span>
-						<font>5人</font><br>
+						<font><c:out value="${pjoblist.rCount}"/></font><br>
 						<span>资薪：</span>
-						<font>55元/小时</font><br>
+						<font><c:out value="${pjoblist.wage}"/></font><br>
 						<a href = "javascript:;">我要报名</a>
 					</li>
-					
-					<li class = "c-li-leftApply">
-						<span>标题：</span>
-						<font>兼职招聘派单促销</font><br>
-						<span>兼职类型：</span>
-						<font>普通兼职</font><br>
-						<span>工作时间：</span>
-						<font>星期一、星期二、星期三、星期四、星期五、星期六、星期日</font><br>
-						<span>工作地点：</span>
-						<font>云岩-中华北路</font><br>
-						<span>人数：</span>
-						<font>15人</font><br>
-						<span>资薪：</span>
-						<font>80元/天 ，日结</font><br>
-						<a href = "javascript:;">我要报名</a>
-					</li>
-					
-					<li>
-						<span>标题：</span>
-						<font>学生兼职</font><br>
-						<span>兼职类型：</span>
-						<font>普通兼职</font><br>
-						<span>工作时间：</span>
-						<font>2014-10-13至2014-10-31 8:30至17:30</font><br>
-						<span>工作地点：</span>
-						<font>南明区朝阳洞路49号</font><br>
-						<span>人数：</span>
-						<font>10人</font><br>
-						<span>资薪：</span>
-						<font>50元/天</font><br>
-						<a href = "javascript:;">我要报名</a>
-					</li>
+					</c:otherwise>
+					</c:choose>
+					</c:forEach>			
 				</ul>
 			</div>
 			
 			
 			<!-- 分页 -->
 			<div class = "c-div-paging">
-				<a href = "javascript:;">上一页</a>
-				<a href = "javascript:;" class = "paging-active">1</a>
-				<a href = "javascript:;">2</a>
-				<a href = "javascript:;">3</a>
-				<a href = "javascript:;">4</a>
+				<a href = "">上一页</a>
+				<a href = "index?page=true&currentPage=${requestScope.pagelist[0].currentPage}" class = "paging-active">${requestScope.pagelist[0].currentPage}</a>
+				<a href = "index?page=true&currentPage=${requestScope.pagelist[1].currentPage}">${requestScope.pagelist[1].currentPage}</a>
+				<a href = "index?page=true&currentPage=${requestScope.pagelist[2].currentPage}">${requestScope.pagelist[2].currentPage}</a>
+				<a href = "index?page=true&currentPage=${requestScope.pagelist[3].currentPage}">${requestScope.pagelist[3].currentPage}</a>
 				<a style = "border-style: none; ">······</a>
-				<a href = "javascript:;">下一页</a>
+				<a href = "index?currentPage=${requestScope.currentPage+1}&nextPage=true">下一页</a>
 			</div>
 			
 		</div>		

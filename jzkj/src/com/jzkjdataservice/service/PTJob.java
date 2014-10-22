@@ -49,10 +49,10 @@ public class PTJob {
 	 * 获取兼职区域
 	 * @return
 	 */
-	public String getPJobArea(){
+	public List<String> getPJobArea(){
 		PJobDao dao = new PJobDao();
 		List<String> list = dao.QueryAllJobAdress();
-		return Json.toPAreaJson(list);
+		return list;
 	}
 	
 	/**
@@ -112,10 +112,10 @@ public class PTJob {
 	 * @param pagesize
 	 * @return
 	 */
-	public String queryPJob(int currentpage, int pagesize){
+	public List<PJob> queryPJob(int currentpage, int pagesize){
 		PJobDao dao = new PJobDao();
 		List<PJob> list=dao.QueryPJob(currentpage, pagesize);
-		return Json.toPJobJson(list);
+		return list;
 	}
 	
 	/**
